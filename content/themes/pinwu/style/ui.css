@@ -297,3 +297,63 @@ a.backToTop:hover{
     opacity: 1;
     filter: Alpha(opacity=100);
 }
+
+
+
+/*Crumbs*/
+.crumbs{
+	height:14px;
+	margin-bottom:20px;
+	padding-left:10px;
+	background:url(../images/crumbs-bg.gif) repeat-x;
+}
+.crumbs-list{
+	background:#fff;
+	float:left;
+}
+.crumbs-list span{
+	margin-right:10px;
+}
+.crumbs-list span a{
+	display:block;
+	height:14px;
+	line-height:14px;
+	padding-left:12px;
+	background:url(../images/list-icon.gif) left center no-repeat;
+}
+.crumbs-list span a.home-icon{
+	padding-left:18px;
+	background:url(../images/home-icon.gif) left center no-repeat;
+}
+
+
+/*css jogger style pagination*/
+
+div.jogger {
+	text-align:center;
+	margin: 7px; 
+	padding:20px 2px;
+	font-family: "lucida sans unicode", "lucida grande", lucidagrande, "lucida sans", geneva, verdana, sans-serif
+}
+div.jogger a {
+	padding-right: 0.64em; padding-left: 0.64em; padding-bottom: 0.43em; margin: 2px; color: #fff; padding-top: 0.5em; background-color: #ee4e4e; text-decoration: none;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+}
+div.jogger a:hover {
+	padding-right: 0.64em; padding-left: 0.64em; padding-bottom: 0.43em; margin: 2px; 
+	background:#e43a3d;
+	color:#fff; padding-top: 0.5em;
+}
+div.jogger a:active {
+	padding-right: 0.64em; padding-left: 0.64em; padding-bottom: 0.43em; margin: 2px; color: #6c6c6c; padding-top: 0.5em; background-color: #eeeeee
+}
+div.jogger span.current {
+	padding-right: 0.64em; padding-left: 0.64em; padding-bottom: 0.43em; margin: 2px; color: #6c6c6c; padding-top: 0.5em; background-color: #eeeeee
+}
+div.jogger span.disabled {
+	display: none
+}
