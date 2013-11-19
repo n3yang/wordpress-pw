@@ -1,9 +1,25 @@
+<?php
 
 
 
+$PINWU_PRODUCT_MENU = array(
 
+);
+/*
+/product/genre/study
 
+51, '卧房', 'room', 0);
 
+52, '书房', 'study', 0);
+
+53, '门的世界', 'door', 0);
+
+54, '整体衣柜', 'chest', 0);
+
+55, '青少年房', 'young', 0);
+*/
+
+/*
 
 INSERT INTO `wp_terms` VALUES (10, '新居快报', 10, 0);
 INSERT INTO `wp_term_taxonomy` VALUES (10, 10, 'category', '', 0, 0);
@@ -28,6 +44,12 @@ INSERT INTO `wp_term_taxonomy` VALUES (25, 25, 'category', '', 0, 0);
 
 INSERT INTO `wp_terms` VALUES (26, '我秀我家', '26', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (26, 26, 'category', '', 0, 0);
+
+INSERT INTO `wp_terms` VALUES (27, '经典定制推荐', '27', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (27, 27, 'category', '', 0, 0);
+
+INSERT INTO `wp_terms` VALUES (28, '热销排行', '28', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (28, 28, 'category', '', 0, 0);
 
 
 
@@ -305,3 +327,5 @@ INSERT INTO `wp_term_taxonomy` VALUES (418, 418, 'genre', '', 400, 0);
 ---- 中纤板
 INSERT INTO `wp_terms` VALUES (419, '中纤板', '419', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (419, 419, 'genre', '', 400, 0);
+
+*/

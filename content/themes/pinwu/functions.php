@@ -6,10 +6,6 @@
  * @subpackage Pinwu
  */
 
-$PINWU_PRODUCT_S = array(
-
-);
-
 
 // turn off auto update
 remove_action( 'wp_version_check', 'wp_version_check' );
@@ -24,29 +20,26 @@ add_filter('the_permalink', function($a){
 	return $a;
 });
 
-function the_post_link(){
-	
-}
-
 /********** customize product post START **********/
 // hook into the init action and call create_product_taxonomies when it fires
 add_action( 'init', 'create_product_taxonomies', 0 );
+
 // create two taxonomies, genres and writers for the post type "product"
 function create_product_taxonomies() {
 	// Add new taxonomy, make it hierarchical (like categories)
 	$labels = array(
-		'name'              => '产品分类',
-		'all_items'         => '所有分类',
-		'add_new_item'      => '添加新分类',
-		'menu_name'         => '产品分类',
+		'name'				=> '产品分类',
+		'all_items'			=> '所有分类',
+		'add_new_item'		=> '添加新分类',
+		'menu_name'			=> '产品分类',
 	);
 	$args = array(
-		'hierarchical'      => true,
-		'labels'            => $labels,
-		'show_ui'           => true,
+		'hierarchical'	  => true,
+		'labels'			=> $labels,
+		'show_ui'		   => true,
 		'show_admin_column' => true,
-		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'genre' ),
+		'query_var'		 => true,
+		'rewrite'		   => array( 'slug' => 'genre' ),
 	);
 
 	register_taxonomy( 'genre', array( 'product' ), $args );
@@ -63,11 +56,11 @@ function create_product_post_type(){
 		'public'			=> true,
 		'menu_position'		=> 5,
 		'capability_type'	=> 'post',
-		'hierarchical'		=> true,
+		'hierarchical'		=> false,
 		'show_ui'			=> true,
 		'show_in_menu'		=> true,
 		'supports'			=> array(
-			'title','editor','author','thumbnail','excerpt','page-attributes'
+			'title','editor','author','thumbnail','excerpt','page-attributes','custom-fields'
 		),
 		'taxonomies' 		=> array('genre'),
 		'labels'			=>array(
@@ -87,6 +80,7 @@ function create_product_post_type(){
 	);
 	register_post_type($post_type,$args);
 }
+
 /********** customize product post END **********/
 
 
@@ -102,7 +96,7 @@ function create_question_post_type(){
 		'public'			=> true,
 		'menu_position'		=> 7,
 		'capability_type'	=> 'post',
-		'hierarchical'		=> true,
+		'hierarchical'		=> false,
 		'show_ui'			=> true,
 		'show_in_menu'		=> true,
 		'supports'			=> array(
@@ -137,7 +131,7 @@ add_filter('manage_question_posts_columns' , 'question_cpt_columns');
 
 // add reply box in question edit page
 function question_add_reply_box() {
-    add_meta_box(
+	add_meta_box(
 		'question_post_excerpt',
 		'问题解答',
 		function ($post) {
@@ -145,8 +139,8 @@ function question_add_reply_box() {
 				wp_editor( htmlspecialchars_decode($post->post_excerpt), 'excerpt' );
 			}
 		},
-        'question'
-    );
+		'question'
+	);
 }
 add_action( 'add_meta_boxes', 'question_add_reply_box' );
 
@@ -226,3 +220,57 @@ add_action( 'load-index.php', function () {
 
 
 
+add_rewrite_rule('^product/genre/([^/]*)/page/(\d+)', 'index.php?post_type=product&genre=room&page=$matches[2]', 'top');
+
+
+function twentythirteen_paging_nav() {
+	global $wp_query;
+
+	// Don't print empty markup if there's only one page.
+	if ( $wp_query->max_num_pages < 2 )
+		return;
+	?>
+	<nav class="navigation paging-navigation" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
+		<div class="nav-links">
+
+			<?php if ( get_next_posts_link() ) : ?>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
+			<?php endif; ?>
+
+			<?php if ( get_previous_posts_link() ) : ?>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
+			<?php endif; ?>
+
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	<?php
+}
+
+
+
+
+
+function pingwu_pagin_nav() {
+	global $wp_query;
+
+	// Don't print empty markup if there's only one page.
+	if ( $wp_query->max_num_pages > 1 )
+		return;
+	?>
+	<nav class="navigation paging-navigation" role="navigation">
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
+		<div class="nav-links">
+
+			<?php if ( get_next_posts_link() ) : ?>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
+			<?php endif; ?>
+
+			<?php if ( get_previous_posts_link() ) : ?>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
+			<?php endif; ?>
+
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	<?php
+}
