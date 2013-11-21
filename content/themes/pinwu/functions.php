@@ -220,57 +220,78 @@ add_action( 'load-index.php', function () {
 
 
 
-add_rewrite_rule('^product/genre/([^/]*)/page/(\d+)', 'index.php?post_type=product&genre=room&page=$matches[2]', 'top');
+
+				add_rewrite_rule('/product/genre/(.+?)/page/?([0-9]{1,})/(.+?)$', 'index.php?'.$tax.'=$matches[1]&paged=$matches[2]&f=$matches[3]', 'top' );
 
 
-function twentythirteen_paging_nav() {
+function pingwu_pagin_nav($range = 4){
 	global $wp_query;
-
-	// Don't print empty markup if there's only one page.
-	if ( $wp_query->max_num_pages < 2 )
-		return;
-	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
-		<div class="nav-links">
-
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
-
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
-
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
-	<?php
+	$paged = get_query_var('paged');
+	if ( !$max_page ) {$max_page = $wp_query->max_num_pages;}
+	if($max_page > 1){if(!$paged){$paged = 1;}
+	echo '<div class="page_navi clear">';
+	if($paged != 1){echo "<a href='" . get_pagenum_link(1) . "' class='extend'>首页</a>";}
+	previous_posts_link('上页');
+    if($max_page > $range){
+		if($paged < $range){for($i = 1; $i <= ($range + 1); $i++){echo "<a href='" . get_pagenum_link($i) ."'";
+		if($i==$paged)echo " class='current'";echo ">$i</a>";}}
+    elseif($paged >= ($max_page - ceil(($range/2)))){
+		for($i = $max_page - $range; $i <= $max_page; $i++){echo "<a href='" . get_pagenum_link($i) ."'";
+		if($i==$paged)echo " class='current'";echo ">$i</a>";}}
+	elseif($paged >= $range && $paged < ($max_page - ceil(($range/2)))){
+		for($i = ($paged - ceil($range/2)); $i <= ($paged + ceil(($range/2))); $i++){echo "<a href='" . get_pagenum_link($i) ."'";if($i==$paged) echo " class='current'";echo ">$i</a>";}}}
+    else{for($i = 1; $i <= $max_page; $i++){echo "<a href='" . get_pagenum_link($i) ."'";
+    if($i==$paged)echo " class='current'";echo ">$i</a>";}}
+	next_posts_link('下页');
+    if($paged != $max_page){echo "<a href='" . get_pagenum_link($max_page) . "' class='extend'>尾页</a>";}
+    echo '</div>';}
 }
 
 
-
-
-
-function pingwu_pagin_nav() {
-	global $wp_query;
-
-	// Don't print empty markup if there's only one page.
-	if ( $wp_query->max_num_pages > 1 )
-		return;
-	?>
-	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'twentythirteen' ); ?></h1>
-		<div class="nav-links">
-
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
-
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentythirteen' ) ); ?></div>
-			<?php endif; ?>
-
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
-	<?php
+function pinwu_get_product_menu_setting($genre_term_id) {
+	$menu = array(
+		'51'	=> array( // 卧房
+			'style'		=> array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), // 风格
+			'feature'	=> array(201, 202, 203, 204, 205), // 功能
+			'price'		=> array(306, 307, 308, 309, 310), // 价格
+			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
+			'slug'		=> 'room',
+		),
+		'52'	=> array( // 书房
+			'style'		=> array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), // 风格
+			'feature'	=> array(206, 207, 208, 209), // 功能
+			'price'		=> array(301, 302, 303, 304, 305), // 价格
+			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
+			'slug'		=> 'study',
+		),
+		'53'	=> array( // 门的世界
+			'style'		=> array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), // 风格
+			'feature'	=> array(210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220), // 功能
+			'price'		=> array(301, 302, 303, 304, 305), // 价格
+			'board'		=> array(417, 418, 419), // 板材
+			'slug'		=> 'door',
+		),
+		'54'	=> array( // 整体衣柜
+			'style'		=> array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), // 风格
+			'feature'	=> array(221, 222, 223, 224, 225, 226), // 功能
+			'price'		=> array(306, 307, 308, 309, 310), // 价格
+			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
+			'slug'		=> 'chest',
+		),
+		'55'	=> array( // 青少年房
+			'style'		=> array(118, 119, 120, 121, 105, 106), // 风格
+			'feature'	=> array(203, 205, 227), // 功能
+			'price'		=> array(301, 302, 303, 304, 305), // 价格
+			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
+			'slug'		=> 'young',
+		),
+	);
+	if ($menu[$genre_term_id]) {
+		foreach ($menu[$genre_term_id] as $k=>$v) {
+			if (is_array($v)) {
+				$array[$k] = get_terms('genre', array('include'=>$v, 'hide_empty'=>0, 'orderby'=>'id'));
+			}
+		}
+	}
+	return $array;
 }

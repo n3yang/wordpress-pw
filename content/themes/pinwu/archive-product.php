@@ -1,1 +1,0 @@
-archive-{post_type}.php
