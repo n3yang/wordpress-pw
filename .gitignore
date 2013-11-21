@@ -1,3 +1,6 @@
 .htaccess
 wp-config.php
 content/uploads/*
+.buildpath
+.project
+.settings/*
