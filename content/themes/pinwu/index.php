@@ -6,13 +6,13 @@
  * @subpackage Pinwu
  */
 
-//get_header(); ?>
+get_header(); ?>
 
 			<?php
 			/* Run the loop to output the posts.
 			 * If you want to overload this in a child theme then include a file
 			 * called loop-index.php and that will be used instead.
-			 */var_dump($wp_query->query_vars);var_dump($_GET);
+			 */
 			if (get_query_var('taxonomy') == 'genre') {
 				get_template_part('index', 'product');
 			} else if (get_query_var('post_type') == 'question') {
@@ -22,4 +22,4 @@
 			}
 			?>
 
-<?php // get_footer(); ?>
+<?php get_footer(); ?>
