@@ -37,12 +37,7 @@ $term_base_link = get_term_link($genre_obj, 'room');
 	<!--ListOfProducts-->
     <div class="main">
     	
-        <div class="products-ad">
-        	<a href="#">
-            	<img src="<?php bloginfo('template_url'); ?>/images/products-ad.gif" />
-            </a>
-        </div>
-        
+        <?php echo get_ad_banner() ?>
         
         <div class="products base-clear">
         	<div class="products-left">

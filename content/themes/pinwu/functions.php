@@ -90,14 +90,14 @@ function create_product_post_type(){
 
 // more thumbnail
 for ($i=1;$i<6;$i++) {
-
-        new MultiPostThumbnails(array(
-            'label' => "图片$i",
-            'id' => "right-image-$i",
-                'post_type' => 'product'
-            )
-        );
+	new MultiPostThumbnails(array(
+		'label'	=> "详情页图片$i",
+		'id'	=> "single-image-$i",
+		'post_type' => 'product'
+		)
+	);
 }
+add_image_size('single-image-thumbnail', 140, 140);
 //MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
 
 
@@ -333,7 +333,14 @@ function get_menu_filter_info($filters, $key, $term_id)
 }
 
 
-
+function get_ad_banner()
+{
+	return '<div class="products-ad">
+        	<a href="#">
+            	<img src="'.get_template_directory_uri().'/images/products-ad.gif" />
+            </a>
+        </div>';
+}
 
 
 
