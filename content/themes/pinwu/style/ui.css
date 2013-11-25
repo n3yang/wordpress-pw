@@ -352,9 +352,9 @@ div.jogger a:hover {
 div.jogger a:active {
 	padding-right: 0.64em; padding-left: 0.64em; padding-bottom: 0.43em; margin: 2px; color: #6c6c6c; padding-top: 0.5em; background-color: #eeeeee
 }
-div.jogger span.current {
+div.jogger a.current {
 	padding-right: 0.64em; padding-left: 0.64em; padding-bottom: 0.43em; margin: 2px; color: #6c6c6c; padding-top: 0.5em; background-color: #eeeeee
 }
-div.jogger span.disabled {
+div.jogger a.disabled {
 	display: none
 }
