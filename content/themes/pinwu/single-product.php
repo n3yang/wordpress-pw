@@ -5,7 +5,10 @@
  * @package WordPress
  * @subpackage Pinwu
  */
-get_header(); ?>
+get_header();
+var_dump(get_category_parents(102));
+var_dump(get_term_by('slug', get_query_var('genre'), 'genre'));
+?>
 
 	<!--
 	<div class="crumbs base-clear">
@@ -81,8 +84,22 @@ get_header(); ?>
                     </div>
                     
                     <div class="material">
+                    
                     	<p>当前柜身：<span class="mater-pic"><b></b><img src="<?php bloginfo('template_url'); ?>/images/c1.jpg" ></span><span class="ms">面板描述：高端、大气、上档次</span></p>
                     	<p>当前柜身：<span class="mater-pic"><b></b><img src="<?php bloginfo('template_url'); ?>/images/c2.jpg" ></span><span class="ms">面板描述：高端、大气、上档次</span></p>
+                    	<?php 
+                    	
+                    	apply_filters( 'taxonomy-images-queried-term-image-url', '' );
+                    	$terms = get_the_terms(get_the_ID(), 'genre');
+print_r($terms);
+
+                    	foreach ($terms as $term) {
+                    		echo $image_id = apply_filters( 'taxonomy-images-queried-term-image-id', 0 );
+//                    		echo $cat_url = z_taxonomy_image_url($term->term_id);
+//                    		echo 
+                    	}
+                    	
+                    	?>
                         <div class="tip">该套餐款式可设计，尺寸可变化，颜色可选择，预算可高低。</div>
                     </div>
                     
@@ -117,46 +134,16 @@ get_header(); ?>
                     </div>
                     <div class="products-left-box-list-qa">
                     	<ul>
+                    	<?php
+						$posts = query_posts(array('post_type'=>'question', 'posts_per_page'=>8));
+						if (have_posts()){ while(have_posts()) : the_post();
+						?>
                         	<li>
-                            	<a href="#">
-                                	<em>·</em>有类似大班台的双人大书桌
+                            	<a href="<?php the_permalink() ?>">
+                                	<em>·</em><?php the_title() ?>
                                 </a>
                             </li>
-                        	<li>
-                            	<a href="#">
-                                	<em>·</em>书柜组合衣柜，介绍一下？
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                	<em>·</em>有类似大班台的双人大书桌
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                	<em>·</em>有类似大班台的双人大书桌
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                	<em>·</em>儿童书柜设计有什么讲究?
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                	<em>·</em>书柜组合衣柜，介绍一下？
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                	<em>·</em>儿童书柜设计有什么讲究?
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                	<em>·</em>书柜组合衣柜，介绍一下？
-                                </a>
-                            </li>
+                        <?php endwhile;}?>
                         </ul>
                     </div>
                 </div>
@@ -167,39 +154,22 @@ get_header(); ?>
                     </div>
                     <div class="products-left-box-list">
                     	<ul>
+                    	<?php
+						$posts = query_posts(array('post_type'=>'product', 'posts_per_page'=>3, 'genre'=> 'classic'));
+						if (have_posts()){ while(have_posts()) : the_post();
+						?>
                         	<li>
-                            	<a href="#">
+                            	<a href="<?php the_permalink() ?>">
                                     <div class="p-l-i">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/left-p-img.jpg" />
+                                        <?php the_post_thumbnail(array(140,140)) ?>
                                     </div>
                                     <div class="p-l-t">
-                                        <p>简约主义家居APOIU1<p>
-                                        <p>优惠价<span>￥48505</span></p>
+                                        <p><?php the_title() ?><p>
+                                        <P>优惠价<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true); ?></span></P>
                                     </div>
                                 </a>
                             </li>
-                        	<li>
-                            	<a href="#">
-                                    <div class="p-l-i">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/left-p-img.jpg" />
-                                    </div>
-                                    <div class="p-l-t">
-                                        <p>简约主义家居APOIU1<p>
-                                        <p>优惠价<span>￥48505</span></p>
-                                    </div>
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                    <div class="p-l-i">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/left-p-img.jpg" />
-                                    </div>
-                                    <div class="p-l-t">
-                                        <p>简约主义家居APOIU1<p>
-                                        <p>优惠价<span>￥48505</span></p>
-                                    </div>
-                                </a>
-                            </li>
+                        <?php endwhile;}?>
                         </ul>
                     </div>
                 </div>
@@ -211,39 +181,22 @@ get_header(); ?>
                     </div>
                     <div class="products-left-box-list">
                     	<ul>
+                    	<?php
+						$posts = query_posts(array('post_type'=>'product', 'posts_per_page'=>3, 'genre'=> 'hot'));
+						if (have_posts()){ while(have_posts()) : the_post();
+						?>
                         	<li>
-                            	<a href="#">
+                            	<a href="<?php the_permalink() ?>">
                                     <div class="p-l-i">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/left-p-img.jpg" />
+                                        <?php the_post_thumbnail(array(140,140)) ?>
                                     </div>
                                     <div class="p-l-t">
-                                        <p>简约主义家居APOIU1<p>
-                                        <p>优惠价<span>￥48505</span></p>
+                                        <p><?php the_title() ?><p>
+                                        <P>优惠价<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true); ?></span></P>
                                     </div>
                                 </a>
                             </li>
-                        	<li>
-                            	<a href="#">
-                                    <div class="p-l-i">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/left-p-img.jpg" />
-                                    </div>
-                                    <div class="p-l-t">
-                                        <p>简约主义家居APOIU1<p>
-                                        <p>优惠价<span>￥48505</span></p>
-                                    </div>
-                                </a>
-                            </li>
-                        	<li>
-                            	<a href="#">
-                                    <div class="p-l-i">
-                                        <img src="<?php bloginfo('template_url'); ?>/images/left-p-img.jpg" />
-                                    </div>
-                                    <div class="p-l-t">
-                                        <p>简约主义家居APOIU1<p>
-                                        <p>优惠价<span>￥48505</span></p>
-                                    </div>
-                                </a>
-                            </li>
+                        <?php endwhile;}?>
                         </ul>
                     </div>
                 </div>
@@ -275,47 +228,19 @@ get_header(); ?>
                             </div>
                         </div>
                         <div class="products-info">
-                        	<div class="products-info-t">
-                            	<p>1、量身定制风格打造：满足不同层次阶段不同消费水平的人群。但是在现代家具风格方面我们还是以大众化的风格基调为标准，不会太另类或者专注与某种特别人群而设计考虑。<br><br>
-2、特殊房型完美攻克：这个系列会针对一些特殊户型比如有凹位的位置如何解决或者飘窗的合理利用等等方面结合我们的板材给予最理想的处理，使家居的合理性体现得完美无瑕。</p>
-                            </div>
                         	<div class="products-info-c">
                             	
                                 <!--以下部分为文章内容-->
-                                <!--news-title-->
+                                <!--news
                                 <div class="tit-wrap">
                                 	<h2 id="a1">
                                     	<span class="arrow-up"></span>
                                         套餐详情
                                     </h2>
                                 </div>
-                            	<!--/news-title-->
-                                
-                                
-                                <div class="tit-wrap">
-                                	<h2 id="a2">
-                                    	<span class="arrow-up"></span>
-                                        定制优势
-                                    </h2>
-                                </div>
-                                
-                                
-                                <!--news-c-->
-                                <div class="c-wrap">
-                                    <p>
-                                        1、量身定制风格打造：满足不同层次阶段不同消费水平的人群。但是在现代家具风格方面我们还是以大众化的风格基调为标准，不会太另类或者专注与某种特别人群而设计考虑。
-                                        2、特殊房型完美攻克：这个系列会针对一些特殊户型比如有凹位的位置如何解决或者飘窗的合理利用等等方面结合我们的板材给予最理想的处理，使家居的合理性体现得完美无瑕。
-                                    </p>
-                                    <img src="<?php bloginfo('template_url'); ?>/images/lz.gif">
-                                </div>
-                                <!--/news-c-->
-                                
-                                <div class="tit-wrap">
-                                	<h2 id="a3">
-                                    	<span class="arrow-up"></span>
-                                        定制流程
-                                    </h2>
-                                </div>
+                            	<news-title-->
+                                <?php the_content() ?>
+
                                 <!--以上部分为文章内容-->                                
                                 
                             

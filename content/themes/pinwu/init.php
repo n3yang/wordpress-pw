@@ -29,12 +29,6 @@ INSERT INTO `wp_term_taxonomy` VALUES (25, 25, 'category', '', 0, 0);
 INSERT INTO `wp_terms` VALUES (26, '我秀我家', '26', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (26, 26, 'category', '', 0, 0);
 
-INSERT INTO `wp_terms` VALUES (27, '经典定制推荐', '27', 0);
-INSERT INTO `wp_term_taxonomy` VALUES (27, 27, 'category', '', 0, 0);
-
-INSERT INTO `wp_terms` VALUES (28, '热销排行', '28', 0);
-INSERT INTO `wp_term_taxonomy` VALUES (28, 28, 'category', '', 0, 0);
-
 
 
 
@@ -54,6 +48,12 @@ INSERT INTO `wp_term_taxonomy` VALUES (54, 54, 'genre', '', 0, 0);
 INSERT INTO `wp_terms` VALUES (55, '青少年房', 'young', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (55, 55, 'genre', '', 0, 0);
 
+-- 运营需求
+INSERT INTO `wp_terms` VALUES (76, '经典定制推荐', 'classic', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (76, 76, 'genre', '', 0, 0);
+
+INSERT INTO `wp_terms` VALUES (77, '热销排行', 'hot', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (77, 77, 'genre', '', 0, 0);
 
 
 

@@ -20,6 +20,10 @@ add_filter('the_permalink', function($a){
 	return $a;
 });
 
+
+// echo z_taxonomy_image_url($cat->term_id);
+
+
 /********** customize product post START **********/
 // hook into the init action and call create_product_taxonomies when it fires
 add_action( 'init', 'create_product_taxonomies', 0 );
@@ -89,15 +93,17 @@ function create_product_post_type(){
 }
 
 // more thumbnail
-for ($i=1;$i<6;$i++) {
-	new MultiPostThumbnails(array(
-		'label'	=> "详情页图片$i",
-		'id'	=> "single-image-$i",
-		'post_type' => 'product'
-		)
-	);
+if (class_exists('MultiPostThumbnails')){
+	for ($i=1;$i<7;$i++) {
+		new MultiPostThumbnails(array(
+			'label'	=> "详情页图片$i",
+			'id'	=> "single-image-$i",
+			'post_type' => 'product'
+			)
+		);
+	}
+	add_image_size('single-image-thumbnail', 140, 140);
 }
-add_image_size('single-image-thumbnail', 140, 140);
 //MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
 
 

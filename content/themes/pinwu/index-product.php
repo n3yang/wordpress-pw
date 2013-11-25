@@ -49,7 +49,7 @@ $term_base_link = get_term_link($genre_obj, 'room');
                     <div class="products-left-box-list">
                     	<ul>
 	                    <?php
-						$posts = query_posts(array('posts_per_page'=>3, 'cat'=> 27));
+						$posts = query_posts(array('post_type'=>'product', 'posts_per_page'=>3, 'genre'=> 'classic'));
 						if (have_posts()){
 						while(have_posts()) : the_post();
 						?>
@@ -77,7 +77,7 @@ $term_base_link = get_term_link($genre_obj, 'room');
                     <div class="products-left-box-list">
                     	<ul>
 	                    <?php
-						$posts = query_posts(array('posts_per_page'=>3, 'cat'=> 28));
+						$posts = query_posts(array('post_type'=>'product', 'posts_per_page'=>3, 'genre'=> 'hot'));
 						if (have_posts()){
 						while(have_posts()) : the_post();
 						?>
