@@ -79,7 +79,27 @@ function create_product_post_type(){
 		'has_archive' => true,
 	);
 	register_post_type($post_type,$args);
+
+	// add filter param in rewrite rules
+	add_rewrite_tag('%filter%','([^&]+)');
+	add_rewrite_rule('^product/genre/([^/]*)/filter/([^/]*)/?$', 'index.php?genre=$matches[1]&filter=$matches[2]', 'top' );
+	add_rewrite_rule('^product/genre/([^/]*)/filter/([^/]*)/page/?([0-9]{1,})/?$', 'index.php?genre=$matches[1]&filter=$matches[2]&paged=$matches[3]', 'top' );
+	
+	// add_rewrite_tag('%page%','([^&]+)');
 }
+
+// more thumbnail
+for ($i=1;$i<6;$i++) {
+	new MultiPostThumbnails(array(
+		'label'	=> "详情页图片$i",
+		'id'	=> "single-image-$i",
+		'post_type' => 'product'
+		)
+	);
+}
+add_image_size('single-image-thumbnail', 140, 140);
+//MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
+
 
 /********** customize product post END **********/
 
@@ -221,15 +241,13 @@ add_action( 'load-index.php', function () {
 
 
 
-				add_rewrite_rule('/product/genre/(.+?)/page/?([0-9]{1,})/(.+?)$', 'index.php?'.$tax.'=$matches[1]&paged=$matches[2]&f=$matches[3]', 'top' );
-
 
 function pingwu_pagin_nav($range = 4){
 	global $wp_query;
 	$paged = get_query_var('paged');
 	if ( !$max_page ) {$max_page = $wp_query->max_num_pages;}
 	if($max_page > 1){if(!$paged){$paged = 1;}
-	echo '<div class="page_navi clear">';
+	echo '<div class="jogger">';
 	if($paged != 1){echo "<a href='" . get_pagenum_link(1) . "' class='extend'>首页</a>";}
 	previous_posts_link('上页');
     if($max_page > $range){
@@ -256,6 +274,7 @@ function pinwu_get_product_menu_setting($genre_term_id) {
 			'price'		=> array(306, 307, 308, 309, 310), // 价格
 			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
 			'slug'		=> 'room',
+			'name'		=> '卧房家具'
 		),
 		'52'	=> array( // 书房
 			'style'		=> array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), // 风格
@@ -263,6 +282,7 @@ function pinwu_get_product_menu_setting($genre_term_id) {
 			'price'		=> array(301, 302, 303, 304, 305), // 价格
 			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
 			'slug'		=> 'study',
+			'name'		=> '书房家具',
 		),
 		'53'	=> array( // 门的世界
 			'style'		=> array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), // 风格
@@ -270,6 +290,7 @@ function pinwu_get_product_menu_setting($genre_term_id) {
 			'price'		=> array(301, 302, 303, 304, 305), // 价格
 			'board'		=> array(417, 418, 419), // 板材
 			'slug'		=> 'door',
+			'name'		=> '门的世界',
 		),
 		'54'	=> array( // 整体衣柜
 			'style'		=> array(101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117), // 风格
@@ -277,6 +298,7 @@ function pinwu_get_product_menu_setting($genre_term_id) {
 			'price'		=> array(306, 307, 308, 309, 310), // 价格
 			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
 			'slug'		=> 'chest',
+			'name'		=> '整体衣柜',
 		),
 		'55'	=> array( // 青少年房
 			'style'		=> array(118, 119, 120, 121, 105, 106), // 风格
@@ -284,6 +306,7 @@ function pinwu_get_product_menu_setting($genre_term_id) {
 			'price'		=> array(301, 302, 303, 304, 305), // 价格
 			'board'		=> array(401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416), // 板材
 			'slug'		=> 'young',
+			'name'		=> '青少年房',
 		),
 	);
 	if ($menu[$genre_term_id]) {
@@ -295,3 +318,29 @@ function pinwu_get_product_menu_setting($genre_term_id) {
 	}
 	return $array;
 }
+
+
+
+function get_menu_filter_info($filters, $key, $term_id)
+{
+	$filter_pieces[$key] = $term_id;
+	$filter_pieces = array_merge($filters, $filter_pieces);
+	if ($filters[$key]==$term_id) {
+		$result['active'] = true;
+	}
+	$result['peice'] = implode('-', $filter_pieces);
+	return $result;
+}
+
+
+function get_ad_banner()
+{
+	return '<div class="products-ad">
+        	<a href="#">
+            	<img src="'.get_template_directory_uri().'/images/products-ad.gif" />
+            </a>
+        </div>';
+}
+
+
+
