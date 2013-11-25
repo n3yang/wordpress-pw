@@ -154,6 +154,12 @@
 	background:#e43a3d;
 	color:#fff;
 }
+.products-list-screen dd span.active a{
+	color:#fff;
+}
+.products-list-screen dd span.active a:hover{
+	text-decoration:none;
+}
 .products-list-result{
 	border:1px solid #eee;
 }

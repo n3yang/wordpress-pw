@@ -66,6 +66,8 @@ $(document).ready(function(){
 			n = 0;
 		
 		u.css("width", len*175);
+		
+		an(0);
 			
 		li.click(function(){
 			var i = $(this).index();
