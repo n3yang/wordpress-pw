@@ -13,7 +13,8 @@ $filters = array_combine(array('style', 'feature', 'price', 'board'), $filters);
 $genre_obj = get_term_by('slug', get_query_var('genre'), 'genre');
 $product_menu = pinwu_get_product_menu_setting($genre_obj->term_id);
 $term_base_link = get_term_link($genre_obj, 'room');
-
+$setting = pinwu_get_product_setting($genre_obj->term_id);
+$nav_nth = $setting['nav_nth'];
 ?>
 	<!--Crumbs-->
 <!--
@@ -33,11 +34,11 @@ $term_base_link = get_term_link($genre_obj, 'room');
 
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style/products.css"/>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/products.js"></script>
-    
+    <script type="text/javascript">nav_active_nth=<?php echo $nav_nth;?></script>
 	<!--ListOfProducts-->
     <div class="main">
     	
-        <?php echo get_ad_banner() ?>
+        <?php echo pinwu_get_ad_banner() ?>
         
         <div class="products base-clear">
         	<div class="products-left">
@@ -113,14 +114,13 @@ $term_base_link = get_term_link($genre_obj, 'room');
 						echo '<dl class="base-clear">';
 						echo '<dt>'.$filter_names[$key].'：</dt>';
 						echo '<dd class="dib-wrap">';
-						$info = get_menu_filter_info($filters, $key, 0);
-						$css_active = $info['active'] ? ' active' : '';
+						$link_all = implode('-', array_merge($filters, array($key=>0)));
+						$css_active = $filters[$key]==0 ? ' active' : '';
 						echo "<span class=\"dib$css_active\">";
-						echo "<a href=\"$term_base_link/filter/{$info['peice']}\">全部</a></span>\n";
+						echo "<a href=\"$term_base_link/filter/$link_all\">全部</a></span>\n";
 						foreach ($value as $term) {
-							$info = get_menu_filter_info($filters, $key, $term->term_id);
-							$link = $term_base_link . '/filter/' . $info['peice'];
-							$css_active = $info['active'] ? ' active' : '';
+							$link = $term_base_link . '/filter/' . implode('-', array_merge($filters,array($key=>$term->term_id)));
+							$css_active = $filters[$key]==$term->term_id ? ' active' : '';
 							echo '<span class="dib'.$css_active.'"><a href="'.$link.'">'.$term->name."</a></span>\n";
 						}
 						echo '</dd>';
@@ -154,6 +154,12 @@ foreach ($filters as $key => $value) {
 		);
 	}
 }
+// add product genre
+$tax_query[] = array(
+	'taxonomy'	=> 'genre',
+	'field'		=> 'id',
+	'terms'		=> $genre_obj->term_id,
+);
 
 $args = array(
 	'post_type'			=> 'product',
@@ -179,6 +185,8 @@ while(have_posts()) : the_post();
                                 </li>
 <?php
 endwhile;
+} else {
+	echo '<li>没有查询到信息</li>';
 }
 ?>
 

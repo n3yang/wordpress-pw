@@ -107,7 +107,7 @@
 		<!-- nav -->
 		<div class="nav-wrap">
 			<ul class="base-clear">
-				<li class="active">
+				<li>
 					<a href="/" title="首页">首页</a>
 				</li>
 				<li>

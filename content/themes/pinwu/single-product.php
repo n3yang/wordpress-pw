@@ -32,8 +32,7 @@ var_dump(get_term_by('slug', get_query_var('genre'), 'genre'));
 	<!--ListOfProducts-->
     <div class="main">
     	
-        <?php echo get_ad_banner() ?>
-        
+        <?php echo pinwu_get_ad_banner() ?>
         
         <!--products-bigPic-show-->
         
@@ -89,14 +88,12 @@ var_dump(get_term_by('slug', get_query_var('genre'), 'genre'));
                     	<p>当前柜身：<span class="mater-pic"><b></b><img src="<?php bloginfo('template_url'); ?>/images/c2.jpg" ></span><span class="ms">面板描述：高端、大气、上档次</span></p>
                     	<?php 
                     	
-                    	apply_filters( 'taxonomy-images-queried-term-image-url', '' );
                     	$terms = get_the_terms(get_the_ID(), 'genre');
-print_r($terms);
+//print_r($terms);
+//print_r(min($terms)->term_id);
 
                     	foreach ($terms as $term) {
-                    		echo $image_id = apply_filters( 'taxonomy-images-queried-term-image-id', 0 );
 //                    		echo $cat_url = z_taxonomy_image_url($term->term_id);
-//                    		echo 
                     	}
                     	
                     	?>

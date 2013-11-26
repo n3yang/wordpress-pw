@@ -2,6 +2,7 @@
 	<!--index-->
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style/index.css"/>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/index.js"></script>
+	<script type="text/javascript">var nav_active_nth=1</script>
 
 	<!--main-->
 	<div class="main base-clear">

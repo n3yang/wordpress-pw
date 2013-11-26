@@ -312,4 +312,25 @@ INSERT INTO `wp_term_taxonomy` VALUES (418, 418, 'genre', '', 400, 0);
 INSERT INTO `wp_terms` VALUES (419, '中纤板', '419', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (419, 419, 'genre', '', 400, 0);
 
+卧房
+地面：SF-D-005  SF-D-006  SF-D-007  SF-D-008  SF-D-009
+墙面：SF-Q-005  SF-Q-006  SF-Q-007 SF-Q-008 SF-Q-009
+
+书房
+地面：SF-D-005  SF-D-006  SF-D007  SF-D-008  SF-D-009
+墙面：SF-Q-005  SF-Q-006  SF-Q-008  SF-Q-009
+
+门的世界
+地面：SF-D-005  SF-D-006  SF-D007  SF-D-008  SF-D-009
+墙面：SF-Q-005  SF-Q-006  SF-Q-008  SF-Q-009
+
+
+整体衣柜
+地面：SF-D-005  SF-D-006  SF-D007  SF-D-008  SF-D-009
+墙面：SF-Q-005  SF-Q-006  SF-Q-008  SF-Q-008  SF-Q-009
+
+青少年房
+地面：SF-E-005  SF-E-006  SF-E-007  SF-E-008  SF-E-009
+墙面：SF-Q-005  SF-Q-006  SF-Q-008   SF-Q-009
+
 */
