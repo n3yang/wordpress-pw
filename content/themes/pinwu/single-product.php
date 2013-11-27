@@ -6,8 +6,6 @@
  * @subpackage Pinwu
  */
 get_header();
-var_dump(get_category_parents(102));
-var_dump(get_term_by('slug', get_query_var('genre'), 'genre'));
 ?>
 
 	<!--
@@ -83,17 +81,19 @@ var_dump(get_term_by('slug', get_query_var('genre'), 'genre'));
                     </div>
                     
                     <div class="material">
-                    
-                    	<p>当前柜身：<span class="mater-pic"><b></b><img src="<?php bloginfo('template_url'); ?>/images/c1.jpg" ></span><span class="ms">面板描述：高端、大气、上档次</span></p>
-                    	<p>当前柜身：<span class="mater-pic"><b></b><img src="<?php bloginfo('template_url'); ?>/images/c2.jpg" ></span><span class="ms">面板描述：高端、大气、上档次</span></p>
                     	<?php 
                     	
                     	$terms = get_the_terms(get_the_ID(), 'genre');
-//print_r($terms);
-//print_r(min($terms)->term_id);
-
                     	foreach ($terms as $term) {
-//                    		echo $cat_url = z_taxonomy_image_url($term->term_id);
+                            if ($term->parent>0){
+                                $term_image_src = z_taxonomy_image_url($term->term_id);
+                                if (!empty($term_image_src)){
+                                    $term_parent = get_term($term->parent, 'genre');
+                                    echo '<p>'.$term_parent->name.'：<span class="mater-pic"><b></b>';
+                                    echo '<img src="'.$term_image_src.'" />';
+                                    echo '</span><span class="ms">'.$term->description.'</span></p>'."\n";
+                                }
+                            }
                     	}
                     	
                     	?>

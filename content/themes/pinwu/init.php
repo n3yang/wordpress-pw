@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 /*
 
 INSERT INTO `wp_terms` VALUES (10, '新居快报', 10, 0);
@@ -312,25 +309,68 @@ INSERT INTO `wp_term_taxonomy` VALUES (418, 418, 'genre', '', 400, 0);
 INSERT INTO `wp_terms` VALUES (419, '中纤板', '419', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (419, 419, 'genre', '', 400, 0);
 
-卧房
-地面：SF-D-005  SF-D-006  SF-D-007  SF-D-008  SF-D-009
-墙面：SF-Q-005  SF-Q-006  SF-Q-007 SF-Q-008 SF-Q-009
 
-书房
-地面：SF-D-005  SF-D-006  SF-D007  SF-D-008  SF-D-009
-墙面：SF-Q-005  SF-Q-006  SF-Q-008  SF-Q-009
+-- 墙面
+INSERT INTO `wp_terms` VALUES (500, '墙面', '500', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (500, 500, 'genre', '', 0, 0);
 
-门的世界
-地面：SF-D-005  SF-D-006  SF-D007  SF-D-008  SF-D-009
-墙面：SF-Q-005  SF-Q-006  SF-Q-008  SF-Q-009
+INSERT INTO `wp_terms` VALUES (501, 'Q-01', '501', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (501, 501, 'genre', '', 500, 0);
 
+INSERT INTO `wp_terms` VALUES (502, 'Q-02', '502', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (502, 502, 'genre', '', 500, 0);
 
-整体衣柜
-地面：SF-D-005  SF-D-006  SF-D007  SF-D-008  SF-D-009
-墙面：SF-Q-005  SF-Q-006  SF-Q-008  SF-Q-008  SF-Q-009
+INSERT INTO `wp_terms` VALUES (503, 'Q-03', '503', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (503, 503, 'genre', '', 500, 0);
 
-青少年房
-地面：SF-E-005  SF-E-006  SF-E-007  SF-E-008  SF-E-009
-墙面：SF-Q-005  SF-Q-006  SF-Q-008   SF-Q-009
+INSERT INTO `wp_terms` VALUES (504, 'Q-04', '504', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (504, 504, 'genre', '', 500, 0);
+
+INSERT INTO `wp_terms` VALUES (505, 'Q-05', '505', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (505, 505, 'genre', '', 500, 0);
+
+INSERT INTO `wp_terms` VALUES (506, 'Q-06', '506', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (506, 506, 'genre', '', 500, 0);
+
+INSERT INTO `wp_terms` VALUES (507, 'Q-07', '507', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (507, 507, 'genre', '', 500, 0);
+
+INSERT INTO `wp_terms` VALUES (508, 'Q-08', '508', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (508, 508, 'genre', '', 500, 0);
+
+INSERT INTO `wp_terms` VALUES (509, 'Q-09', '509', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (509, 509, 'genre', '', 500, 0);
+
+-- 地面
+INSERT INTO `wp_terms` VALUES (600, '墙面', '600', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (600, 600, 'genre', '', 0, 0);
+
+INSERT INTO `wp_terms` VALUES (601, 'D-01', '601', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (601, 601, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (602, 'D-02', '602', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (602, 602, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (603, 'D-03', '603', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (603, 603, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (604, 'D-04', '604', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (604, 604, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (605, 'D-05', '605', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (605, 605, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (606, 'D-06', '606', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (606, 606, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (607, 'D-07', '607', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (607, 607, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (608, 'D-08', '608', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (608, 608, 'genre', '', 600, 0);
+
+INSERT INTO `wp_terms` VALUES (609, 'D-09', '609', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (609, 609, 'genre', '', 600, 0);
+
 
 */
