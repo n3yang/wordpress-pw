@@ -48,7 +48,7 @@
 }
 
 .form-line{
-	margin-bottom:35px;
+	margin-bottom:25px;
 	padding-left:60px;
 	position:relative;
 }
@@ -90,9 +90,9 @@ input.p{
 }
 .pic-code a{
 }
-.w-100{
+.w-80{
 	padding:8px 5px;
-	width:100px;
+	width:80px;
 }
 .m-195{
 	padding-left:195px;
@@ -116,15 +116,18 @@ label.ui-check-label{
 	font-family:"微软雅黑";
 	font-size:16px;
 }
+.input-info{
+	padding-left:135px;
+}
 .unhappy{
 	border:1px solid #FFE4DF;
 }
 .unhappyMessage{
 	position:absolute;
-	left:195px;
-	top:35px;
-	color:#F00;
+	left:430px;
+	top:1px;
+	color:#FF6868;
 	background:#FFE4DF;
-	border:1px solid #F00;
+	border:1px solid #FBB;
 	padding:5px;
 }
