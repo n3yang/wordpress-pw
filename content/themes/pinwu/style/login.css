@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+.login-wrap{
+	margin-bottom:20px;
+	border:1px solid #eee;
+}
+.login-box{
+	float:left;
+	width:50%;
+	height:515px;
+	padding-bottom:295px;
+	position:relative;
+}
+.login-merit{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:214px;
+	padding-top:80px;
+	border-top:1px solid #eee;
+	background:#fbfbfb url(../images/right-t.gif) right center no-repeat;
+}
+.login-merit p{
+	padding-left:80px;
+	line-height:24px;
+}
+.login-merit p strong, .login-merit p i{
+	color:#e43a3d;
+}
+.register-box{
+	float:right;
+	width:50%;
+	height:810px;
+	background:#f4f4f4 url(../images/login-line.gif) left top repeat-y;
+}
+
+
+.login-form-wrap{
+	height:515px;
+	background:url(../images/lou.gif) right bottom no-repeat;
+}
+.login-form-wrap h1, .reg-form-wrap h1{
+	padding-top:20px;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.form-line{
+	margin-bottom:35px;
+	padding-left:60px;
+	position:relative;
+}
+.form-line label{
+	vertical-align:middle;
+	width:125px;
+	text-align:right;
+	display:inline-block;
+	margin-right:5px;
+	font-size:14px;
+}
+.ui-input{
+	padding:8px 27px 8px 5px;
+	margin:0px;
+	border:1px solid #eee;
+	background:#fff;
+	vertical-align:middle;
+	width:200px;
+	display:inline-block;
+}
+.ui-input:focus{
+	border:1px solid #7ABD54
+}
+.pic-code{
+	vertical-align:middle;
+	line-height:0;
+	font-size:12px;
+	display:inline-block;
+}
+input.u{
+	background:#fff url(../images/username-bg.jpg) right center no-repeat;
+}
+input.p{
+	background:#fff url(../images/password-bg.jpg) right center no-repeat;
+}
+.pic-code img{
+	width:100px;
+	height:30px;
+}
+.pic-code a{
+}
+.w-100{
+	padding:8px 5px;
+	width:100px;
+}
+.m-195{
+	padding-left:195px;
+}
+label.ui-check-label{
+	vertical-align:middle;
+	font-size:12px;
+	width:auto;
+	text-align:left;
+}
+.ui-check{
+	vertical-align:middle;
+	margin-top:3px;
+}
+.form-btn{
+	background:#e43a3d;
+	color:#fff;
+	padding:8px 25px;
+	border:none;
+	cursor:pointer;
+	font-family:"微软雅黑";
+	font-size:16px;
+}
+.unhappy{
+	border:1px solid #FFE4DF;
+}
+.unhappyMessage{
+	position:absolute;
+	left:195px;
+	top:35px;
+	color:#F00;
+	background:#FFE4DF;
+	border:1px solid #F00;
+	padding:5px;
+}
