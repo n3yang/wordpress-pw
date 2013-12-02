@@ -12,10 +12,12 @@ $(document).ready(function () {
 		  message: '您输入的密码有误',
 		  test: happy.ispassword 
 		},
+		/*
 		'#v_code': {
 		  required: true,
 		  message: '您输入的验证码有误'
 		}
+		*/
 	  }
 	});
 	
@@ -47,10 +49,12 @@ $(document).ready(function () {
 		  message: '您输入的手机号码有误',
 		  test: happy.isMob
 		},
+		/*
 		'#v_code_reg': {
 		  required: true,
 		  message: '您输入的验证码有误'
 		}
+		*/
 	  }
 	});
 }); 
