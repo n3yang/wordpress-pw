@@ -232,7 +232,7 @@ function register_my_custom_menu_page(){
 	add_filter('update_footer', function(){echo '感谢使用';});
 }
 
-
+show_admin_bar(false);
 add_action( 'admin_bar_menu', 'remove_wp_admin_bar', 999 );
 function remove_wp_admin_bar( $wp_admin_bar ) {
 	$wp_admin_bar->remove_node('wp-logo');
