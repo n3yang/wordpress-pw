@@ -131,3 +131,17 @@ label.ui-check-label{
 	border:1px solid #FBB;
 	padding:5px;
 }
+
+
+.error-box{
+	width:50%;
+	margin:10px auto 20px;
+	text-align:left;
+	color:#FF6868;
+	background:#FFE4DF;
+	border:1px solid #FBB;
+	padding:5px 5px 0px;
+}
+.error-box p{
+	margin-bottom:5px;
+}
