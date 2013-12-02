@@ -27,18 +27,23 @@
 <div class="site-nav">
 	<div class="site-nav-bd">
 		<ul class="site-nav-bd-r">
+			<?php
+			if (!is_user_logged_in()) {
+			?>
 			<li class="login-info menu">
 				<div class="menu-hd">
-					<a href="#">用户登录</a> | <a href="#">注册</a>
+					<a href="/login">用户登录</a> | <a href="/login">注册</a>
 				</div>
 			</li>
-			<!-- login-after 
-			<li class="login-info">
+			<?php
+			} else {
+			?>
+			<li class="login-info menu">
 				<div class="menu-hd">
-					<a href="#">正品行货批发价</a> | <a href="#">退出</a>
+					<a href="#"><?php echo get_current_user() ?></a> | <a href="/login?act=out">退出</a>
 				</div>
 			</li>
-			-->
+			<?php } ?>
 			<li class="weibo menu">
 				<div class="menu-hd">
 					<a href="#">
