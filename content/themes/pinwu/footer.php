@@ -97,7 +97,9 @@
 
 </div>
 <script type="text/javascript">
-$('.nav-wrap ul li:nth-child('+nav_active_nth+')').attr('class','active');
+if (typeof(nav_active_nth)!='undefined') { 
+	$('.nav-wrap ul li:nth-child('+nav_active_nth+')').attr('class','active');
+}
 </script>
 <?php
 	/* Always have wp_footer() just before the closing </body>
