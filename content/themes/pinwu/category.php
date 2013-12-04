@@ -1,15 +1,13 @@
-<?php
-/**
- * The Template for displaying all single posts.
- *
- * @package WordPress
- * @subpackage Pinwu
- */
-get_header();
-$the_page_post_id = get_the_ID();
-?>
 
-	<!--
+<?php
+
+$the_page_cat_id = get_query_var('cat');
+$the_page_cat_name = get_cat_name($the_page_cat_id);
+$the_page_paged = get_query_var('paged');
+
+get_header(); ?>
+
+	<!--Crumbs
 	<div class="crumbs base-clear">
     	<div class="crumbs-list">
         	<span>
@@ -32,7 +30,7 @@ $the_page_post_id = get_the_ID();
     <div class="main">
     	
         <?php echo pinwu_get_ad_banner() ?>
-                
+
         <div class="products base-clear">
         	<div class="products-left">
             	<!--products-left-box-->
@@ -82,8 +80,7 @@ $the_page_post_id = get_the_ID();
                     </div>
                 </div>
                 
-                
-            	<div class="products-left-box">
+             	<div class="products-left-box">
                 	<div class="products-left-box-title">
                     	<span>热销排行</span>
                     </div>
@@ -111,45 +108,41 @@ $the_page_post_id = get_the_ID();
                 <!--/products-left-box-->
             </div>
             
-<?php
-$posts = query_posts(array('p'=>$the_page_post_id));
-if (have_posts()){
-	the_post(); 
-	$cats = get_the_category($post->ID);
-	if (count($cats)>1){
-		$cat_name = $cats[0]->cat_name;
-	}
-}
-?>
-
             <div class="products-right">
             	<div class="products-list-wrap">
    
                     <div class="products-list-result">
                     	<div class="products-list-result-title">
                         	<div class="ti dib-wrap">
-                            	<span class="dib"><a class="active"><?php echo $cat_name ?></a></span>
+                            	<span class="dib"><a class="active"><?php echo $the_page_cat_name ?></a></span>
                             </div>
                         </div>
                         <div class="products-info">
                         	<div class="products-info-c">
                             	
                                 <!--以下部分为文章内容-->
-                                <div class="news-content">
-                                	
-                                    <h1><?php the_title() ?></h1>
-                                    
-                                    <h2>
-                                    	<span><?php the_date() ?></span>
-                                        <span>作者：<?php the_author() ?></span>
-                                    </h2>
-                                    
-                                    <div class="news-con-text">
-                                    	<?php the_content(); ?>
-                                    </div>
-                                    
+                                <div class="news-list">
+                                    <ul>
+                                    	<?php
+                                    	$args = array(
+                                    		'cat'				=> $the_page_cat_id,
+                                    		'posts_per_page'	=> 1,
+                                    		'paged'				=> $paged>1 ? $paged : 1
+                                    	);
+										$posts = query_posts($args);
+										if (have_posts()){ while(have_posts()) : the_post();
+										?>
+                                        <li>
+                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                            <span><?php the_date() ?></span>
+                                        </li>
+                                    	<?php endwhile;} ?>
+                                    </ul>
                                 </div>
-                                <!--以上部分为文章内容-->
+                                <!--以上部分为文章内容-->                                
+                                <p>
+                                    <?php pingwu_pagin_nav(); ?>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -161,4 +154,6 @@ if (have_posts()){
     </div> 
     <!--/ListOfProducts-->
 
-<?php get_footer(); ?>
+
+<?php
+get_footer() ?>

@@ -43,8 +43,8 @@ if (isset($_POST['signup_submit'])) {
 	}
 	if (!$error){
 		$user_id = wp_create_user( $_POST['username'], $_POST['password'], $_POST['email'] );
-		if ($user_id) {
-			// add_user_meta($user_id,)
+		if ($user_id && !empty($_POST['tel'])) {
+			wp_update_user( array ( 'ID' => $user_id, 'jabber' => $_POST['tel'] ) ) ;
 		}
 		exit('<script type="text/javascript" charset="utf-8">alert("注册成功");location.href="/"</script>');
 	}
@@ -79,7 +79,11 @@ if (isset($_POST['signup_submit'])) {
         
         	<div class="login-form-wrap">
         		<h1><img src="<?php bloginfo('template_url'); ?>/images/login-title.gif" /></h1>
-
+        		<?php
+        		if (!empty($login_error)){
+        		?>
+                <div class="error-box"><p>♦<?php echo $login_error ?></p></div>
+                <?php } ?>
                 <form id="login" method="post" action="">
                     <div class="form-line">
                     	<label for="login_username">用户名：</label>
@@ -121,7 +125,7 @@ if (isset($_POST['signup_submit'])) {
         <div class="register-box">
         	<div class="reg-form-wrap">
             	<h1><img src="<?php bloginfo('template_url'); ?>/images/reg-title.gif" /></h1>
-                <form id="reg" method="" action="">
+                <form id="reg" method="post" action="">
                     <div class="form-line">
                     	<label for="username">用户名：</label>
                         <input id="username" name="username" class="ui-input u" type="text" />
@@ -130,7 +134,7 @@ if (isset($_POST['signup_submit'])) {
                     <div class="form-line">
                     	<label for="password">密码：</label>
                         <input id="password" name="password" class="ui-input p" type="password" autocomplete="off" />
-                        <p class="input-info">密码长度6～20位，由英文字母a～z，数字0～9组成</p>
+                        <p class="input-info">密码长度6～20位，由英文字母a～z和数字0～9混合组成</p>
                     </div>
                     <div class="form-line">
                     	<label for="r_password">确认密码：</label>
@@ -151,19 +155,20 @@ if (isset($_POST['signup_submit'])) {
                         <span class="pic-code"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/image.jpg" /></a></span>
                         <span class="pic-code"><a href="#">换一张</a></span>
                     </div>
-                    -->
+                    
                     <div class="form-line">
                     	<label for="order">预约免费量尺：</label>
                     	<input id="order" name="order" type="checkbox" class="ui-check" value="1">
                         <label for="order" class="ui-check-label">购买家具前，预先看到家具摆到自家效果，免费上门量房设计。</label>
                     </div>
+                    -->
                     
                     <div class="form-line m-195">
                     	<input id="term" name="term" type="checkbox" class="ui-check" value="1" checked="checked">
                         <label for="term" class="ui-check-label">我已经阅读并同意注册条款</label>
                     </div>
                     <div class="form-line m-195">
-                    	<input class="form-btn" id="login_btn" type="signup_submit" value="立即注册" />
+                    	<input class="form-btn" id="login_btn" name="signup_submit" type="submit" value="立即注册" />
                     </div>
                 </form>
             </div>

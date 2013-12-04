@@ -88,8 +88,12 @@ function create_product_post_type(){
 	add_rewrite_tag('%filter%','([^&]+)');
 	add_rewrite_rule('^product/genre/([^/]*)/filter/([^/]*)/?$', 'index.php?genre=$matches[1]&filter=$matches[2]', 'top' );
 	add_rewrite_rule('^product/genre/([^/]*)/filter/([^/]*)/page/?([0-9]{1,})/?$', 'index.php?genre=$matches[1]&filter=$matches[2]&paged=$matches[3]', 'top' );
+
+
+// register the category rewrite rule
+	add_rewrite_rule('^article/category/([^/]*)/?$', 'index.php?cat=$matches[1]', 'top' );
+	add_rewrite_rule('^article/category/([^/]*)/page/?([0-9]{1,})/?$', 'index.php?cat=$matches[1]&paged=2', 'top' );
 	
-	// add_rewrite_tag('%page%','([^&]+)');
 }
 
 // more thumbnail
@@ -226,7 +230,7 @@ function register_my_custom_menu_page(){
 	remove_meta_box('dashboard_recent_drafts', 'dashboard', 'normal');  // Recent Drafts
 	remove_meta_box('dashboard_primary', 'dashboard', 'side');   // WordPress blog
 	remove_meta_box('dashboard_secondary', 'dashboard', 'side');   // Other WordPress News
-	remove_meta_box('dashboard_welcome_panel', 'dashboard', 'normal');   // Other WordPress News
+	remove_meta_box('welcome_panel', 'dashboard', 'normal');   // Other WordPress News
 	add_meta_box('dashboard_welcome_custmoized', '感谢', function(){echo '感谢使用';}, 'dashboard', 'normal');
 	add_filter('admin_footer_text', function(){});
 	add_filter('update_footer', function(){echo '感谢使用';});
@@ -243,8 +247,6 @@ function remove_wp_admin_bar( $wp_admin_bar ) {
 add_action( 'load-index.php', function () {
 	update_user_meta( get_current_user_id(), 'show_welcome_panel', 0 );
 });
-
-
 
 
 

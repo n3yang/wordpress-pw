@@ -60,7 +60,7 @@
 			</div>
 			
 			<div class="news-wrap">
-				<h1>新居快报<a href="#">更多</a></h1>
+				<h1>新居快报<a href="<?php echo get_category_link(10) ?>">更多</a></h1>
 				<ul>
 					<?php
 						$posts = get_posts(array('category'=>10));

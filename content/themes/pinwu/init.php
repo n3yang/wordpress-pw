@@ -52,6 +52,8 @@ INSERT INTO `wp_term_taxonomy` VALUES (76, 76, 'genre', '', 0, 0);
 INSERT INTO `wp_terms` VALUES (77, '热销排行', 'hot', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (77, 77, 'genre', '', 0, 0);
 
+INSERT INTO `wp_terms` VALUES (78, 'DIY推荐', 'top-diy', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (78, 78, 'genre', '', 0, 0);
 
 
 -- 风格
