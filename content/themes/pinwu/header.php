@@ -143,7 +143,7 @@
 					<a href="#" title="定制导购">定制导购</a>
 				</li>
 				<li>
-					<a href="#" title="问答">问答</a>
+					<a href="/question" title="问答">问答</a>
 				</li>
 			</ul>
 		</div>

@@ -88,12 +88,6 @@ function create_product_post_type(){
 	add_rewrite_tag('%filter%','([^&]+)');
 	add_rewrite_rule('^product/genre/([^/]*)/filter/([^/]*)/?$', 'index.php?genre=$matches[1]&filter=$matches[2]', 'top' );
 	add_rewrite_rule('^product/genre/([^/]*)/filter/([^/]*)/page/?([0-9]{1,})/?$', 'index.php?genre=$matches[1]&filter=$matches[2]&paged=$matches[3]', 'top' );
-
-
-// register the category rewrite rule
-	add_rewrite_rule('^article/category/([^/]*)/?$', 'index.php?cat=$matches[1]', 'top' );
-	add_rewrite_rule('^article/category/([^/]*)/page/?([0-9]{1,})/?$', 'index.php?cat=$matches[1]&paged=2', 'top' );
-	
 }
 
 // more thumbnail
