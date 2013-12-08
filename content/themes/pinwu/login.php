@@ -44,7 +44,7 @@ if (isset($_POST['signup_submit'])) {
 	if (!$error){
 		$user_id = wp_create_user( $_POST['username'], $_POST['password'], $_POST['email'] );
 		if ($user_id && !empty($_POST['tel'])) {
-			wp_update_user( array ( 'ID' => $user_id, 'jabber' => $_POST['tel'] ) ) ;
+           update_user_meta($user_id, 'tel', $_POST['tel']);
 		}
 		exit('<script type="text/javascript" charset="utf-8">alert("注册成功");location.href="/"</script>');
 	}

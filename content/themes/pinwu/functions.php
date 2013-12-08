@@ -20,6 +20,11 @@ add_filter('the_permalink', function($a){
 	return $a;
 });
 
+// add user's tel in user pannel
+add_filter('user_contactmethods', function ($user_contactmethods){
+    $user_contactmethods ['tel'] = '电话';
+    return $user_contactmethods ;
+});
 
 // echo z_taxonomy_image_url($cat->term_id);
 
@@ -242,8 +247,17 @@ add_action( 'load-index.php', function () {
 	update_user_meta( get_current_user_id(), 'show_welcome_panel', 0 );
 });
 
+/********** customize the admin panel **********/
 
 
+
+
+
+/**
+ * print the page bar
+ * @param  integer $range 
+ * @return bool    all ways true
+ */
 function pingwu_pagin_nav($range = 4){
 	global $wp_query;
 	$paged = get_query_var('paged');

@@ -28,7 +28,8 @@
 	<div class="site-nav-bd">
 		<ul class="site-nav-bd-r">
 			<?php
-			if (!is_user_logged_in()) {
+			$current_user = wp_get_current_user();
+			if ($current_user->ID==0) {
 			?>
 			<li class="login-info menu">
 				<div class="menu-hd">
@@ -40,7 +41,7 @@
 			?>
 			<li class="login-info menu">
 				<div class="menu-hd">
-					<a href="#"><?php echo get_current_user() ?></a> | <a href="/login?act=out">退出</a>
+					<a href="#"><?php echo $current_user->user_login; ?></a> | <a href="/login?act=out">退出</a>
 				</div>
 			</li>
 			<?php } ?>
@@ -72,14 +73,15 @@
 				<div class="search-wrap">
 					<form>
 						<div id="search-input" class="search-input">
-							<label id="search-label">厨房有柱子，橱柜如何设计？</label>
+							<label id="search-label">请输入您要搜索的关键字</label>
 							<input id="search-text" type="text" />
 						</div>
 						<input class="search-btn" type="submit" value=""/>
 					</form>
 				</div>
 				<div class="search-keyword dib-wrap">
-					<span class="dib">
+<!--
+ 					<span class="dib">
 						<a href="#">榻榻米衣柜</a>
 					</span>
 					<span class="dib">
@@ -100,6 +102,7 @@
 					<span class="dib">
 						<a href="#">进门玄关的鞋柜如何设计？</a>
 					</span>
+-->
 				</div>
 			</div>
 			<div class="tel"></div>
