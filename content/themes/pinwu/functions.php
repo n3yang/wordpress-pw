@@ -210,7 +210,7 @@ add_action('add_meta_boxes', 'question_add_attach_show_box');
 /********** customize the admin pannel ***********/
 add_action( 'admin_menu', 'register_my_custom_menu_page' );
 function register_my_custom_menu_page(){
-	add_menu_page( 'custom menu title', 'custom menu', 'manage_options', '/aa/test.php', '', '', 8 );
+	// add_menu_page( 'custom menu title', 'custom menu', 'manage_options', '/aa/test.php', '', '', 8 );
 	remove_menu_page('edit-comments.php');
 	// remove_submenu_page('themes.php', 'themes.php');
 	remove_submenu_page('themes.php', 'customize.php');
@@ -234,7 +234,7 @@ function register_my_custom_menu_page(){
 	add_filter('admin_footer_text', function(){});
 	add_filter('update_footer', function(){echo '感谢使用';});
 }
-
+// show admin bar never
 show_admin_bar(false);
 add_action( 'admin_bar_menu', 'remove_wp_admin_bar', 999 );
 function remove_wp_admin_bar( $wp_admin_bar ) {

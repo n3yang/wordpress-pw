@@ -1,29 +1,14 @@
-
 <?php
-
-$the_page_cat_slug = get_query_var('category_name');
-$cat = get_term_by( 'slug', $the_page_cat_slug, 'category' );
-$the_page_cat_name = !is_object($cat) ? '' : $cat->name;
-$the_page_paged = get_query_var('paged');
-
+/**
+ * The template for displaying Search Results pages
+ * 
+ * @package WordPress
+ * @subpackage Pinwu
+ */
+get_header();
+$search_query = get_search_query();
 ?>
 
-	<!--Crumbs
-	<div class="crumbs base-clear">
-    	<div class="crumbs-list">
-        	<span>
-            	<a href="#" class="home-icon">首页</a>
-            </span>
-        	<span>
-            	<a href="#">卧房定制家居</a>
-            </span>
-        	<span>
-            	<a href="#">新实用主义书房家具</a>
-            </span>
-        </div>
-    </div>
-	/Crumbs-->
-    
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style/products.css"/>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/products.js"></script>
     
@@ -41,7 +26,7 @@ $the_page_paged = get_query_var('paged');
                     <div class="products-list-result">
                     	<div class="products-list-result-title">
                         	<div class="ti dib-wrap">
-                            	<span class="dib"><a class="active"><?php echo $the_page_cat_name ?></a></span>
+                            	<span class="dib"><a class="active">关键字搜索：<?php echo $search_query ?></a></span>
                             </div>
                         </div>
                         <div class="products-info">
@@ -52,18 +37,23 @@ $the_page_paged = get_query_var('paged');
                                     <ul>
                                     	<?php
                                     	$args = array(
-                                    		'cat'				=> $the_page_cat_slug,
-                                    		'posts_per_page'	=> 1,
-                                    		'paged'				=> $paged>1 ? $paged : 1
+                                    		'posts_per_page'    => 20,
+                                    		'paged'             => $paged>1 ? $paged : 1,
+                                            's'                 => $search_query,
                                     	);
 										$posts = query_posts($args);
 										if (have_posts()){ while(have_posts()) : the_post();
 										?>
                                         <li>
-                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                            <a href="<?php the_permalink() ?>" target="_blank"><?php the_title() ?></a>
                                             <span><?php the_date() ?></span>
                                         </li>
-                                    	<?php endwhile;} ?>
+                                    	<?php
+                                            endwhile;
+                                        } else {
+                                            echo '没有查询到相关内容';
+                                        }
+                                        ?>
                                     </ul>
                                 </div>
                                 <!--以上部分为文章内容-->                                
@@ -79,4 +69,8 @@ $the_page_paged = get_query_var('paged');
         </div>
         
     </div> 
-    <!--/ListOfProducts-->
+
+
+<?php
+get_footer();
+?>

@@ -65,18 +65,18 @@
 	<div class="head">
 		<div class="head-wrap">
 			<div class="logo">
-				<a href="#">
+				<a href="/">
 					<img src="<?php bloginfo('template_url'); ?>/images/logo.gif" />
 				</a>			
 			</div>
 			<div class="search">
 				<div class="search-wrap">
-					<form>
+					<form action="/search/" method="post" id="search-form">
 						<div id="search-input" class="search-input">
 							<label id="search-label">请输入您要搜索的关键字</label>
-							<input id="search-text" type="text" />
+							<input type="text" value="" name="s" id="search-text" />
 						</div>
-						<input class="search-btn" type="submit" value=""/>
+						<input class="search-btn" type="button" value=""/>
 					</form>
 				</div>
 				<div class="search-keyword dib-wrap">

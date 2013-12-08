@@ -22,6 +22,13 @@ $(document).ready(function(){
 				$(this).val("")
 			}
 		})
+		$(".search-btn").click(function() {
+			location.href='/search/'+encodeURI($("#search-text").val());
+		});
+		$("#search-form").submit(function() {
+			location.href='/search/'+encodeURI($("#search-text").val());
+			return false;
+		})
 	})();
 
 	//map
