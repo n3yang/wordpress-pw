@@ -5,8 +5,9 @@
  * @package WordPress
  * @subpackage Pinwu
  */
-get_header();
+
 $the_page_post_id = get_the_ID();
+get_header();
 ?>
 
 	<!--
