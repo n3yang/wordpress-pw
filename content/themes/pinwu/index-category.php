@@ -53,7 +53,7 @@ $the_page_paged = get_query_var('paged');
                                     	<?php
                                     	$args = array(
                                     		'cat'				=> $the_page_cat_slug,
-                                    		'posts_per_page'	=> 1,
+                                    		'posts_per_page'	=> 20,
                                     		'paged'				=> $paged>1 ? $paged : 1
                                     	);
 										$posts = query_posts($args);

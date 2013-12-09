@@ -163,7 +163,7 @@ $tax_query[] = array(
 
 $args = array(
 	'post_type'			=> 'product',
-	'posts_per_page'	=> 1,
+	'posts_per_page'	=> 20,
 	'paged'				=> $paged>1 ? $paged : 1,
 	'tax_query'			=> $tax_query
 );

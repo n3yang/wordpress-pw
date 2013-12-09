@@ -92,7 +92,7 @@ $(document).ready(function(){
 				type: "POST",
 				url: "/diy/?method=ajax",
 				timeout: 5000,
-				async: true,
+				async: false,
 				dataType: 'json',
 			    data: {
 				    "feature":default_fun_id,
