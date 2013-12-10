@@ -85,7 +85,7 @@
 
 		<div class="footer-hd">
 			<span>2013-2014 © 品屋（北京）家居用品有限公司 <br>版权所有 
-经营许可证编号: <a href="">京B2-2006123122</a> 备案号: <a href="">京ICP备080012346号</a> 备案编号:440112312
+<!-- 经营许可证编号: <a href="">京B2-2006123122</a> --> 备案号: <a href="">京ICP备13050627号-1</a> <!-- 备案编号:440112312 -->
 			</span>
 		</div>
 		<div class="footer-hd">
@@ -107,10 +107,10 @@ if (typeof(nav_active_nth)!='undefined') {
 	 * generally use this hook to reference JavaScript files.
 	 */
 
-    global $wpdb;
-    echo "<pre>";
-    print_r( $wpdb->queries );
-    echo "</pre>";
+    // global $wpdb;
+    // echo "<pre>";
+    // print_r( $wpdb->queries );
+    // echo "</pre>";
 
 	wp_footer();
 ?>
