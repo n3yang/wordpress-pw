@@ -204,6 +204,7 @@
 	-moz-box-shadow: 0 2px 4px rgba(170,170,170,.75);
 	box-shadow: 0 2px 4px rgba(170,170,170,.75);
 	display: none;
+	z-index:99999
 }
 #map-box .map-wrap{
 	background: #fff;
