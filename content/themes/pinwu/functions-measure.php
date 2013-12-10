@@ -2,10 +2,9 @@
 
 // register new post-type: 
 add_action('init',function (){ 
-	$post_type="measure";
-	$args=array(
-		'label'				=> '订制',
-
+	$post_type = "measure";
+	$args = array(
+		'label'				=> '量尺',
 		'menu_position'		=> 7,
 		'capability_type'	=> 'post',
 		'capability'		=> array('read_post'),
@@ -32,4 +31,50 @@ add_action('init',function (){
 	);
 	register_post_type($post_type,$args);
 
+});
+
+add_filter( 'manage_edit-measure_columns', 'pinwu_edit_measure_columns' ) ;
+function pinwu_edit_measure_columns( $columns ) {
+	$columns = array(
+		'cb' => '<input type="checkbox" />',
+		'content' => '登记内容',
+		'date' => __( 'Date' )
+	);
+	return $columns;
+}
+
+add_action('manage_measure_posts_custom_column', function($column) {
+    global $post;
+    if ($column == 'content') {
+        $content = unserialize($post->post_content);
+        foreach ($content as $k => $v) {
+        	switch ($k) {
+        		case 'name':
+        			echo '姓名';
+        		break;
+        		case 'tel':
+        			echo '电话';
+        		break;
+        		case 'email':
+        			echo '电子邮箱';
+        		break;
+        		case 'address':
+        			echo '地址';
+        		break;
+        		case 'sex':
+        			echo '性别';
+        		break;
+        		case 'stage':
+        			echo '装修阶段';
+        		break;
+        		case 'area':
+        			echo '面积';
+        		break;
+        		case 'time':
+        			echo '希望上门日期';
+        		break;
+        	}
+        	echo '：'.sanitize_text_field($v).'<br />';
+        }
+    }
 });
