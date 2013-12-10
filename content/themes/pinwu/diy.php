@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: DIY Page
- * The template for pinwu login & registration page
+ * The template for pinwu DIY page
  * 
  * @package WordPress
  * @subpackage Pinwu

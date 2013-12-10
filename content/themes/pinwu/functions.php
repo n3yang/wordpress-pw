@@ -198,6 +198,10 @@ add_action('add_meta_boxes', 'question_add_attach_show_box');
 
 
 
+/********** customize measure post START **********/
+require_once 'functions-measure.php';
+/********** customize measure post END **********/
+
 /**
  * how to get the logo of youku video
  */
@@ -217,7 +221,7 @@ function register_my_custom_menu_page(){
 	remove_submenu_page('themes.php', 'widgets.php');
 	remove_submenu_page('index.php', 'update-core.php');
 	// remove_menu_page('plugins.php');
-
+	// remove_submenu_page('edit.php?post_type=custom', 'post-new.php?post_type=custom');
 	remove_meta_box('tagsdiv-post_tag', 'post', 'normal');
 
 	// customize dashboard
