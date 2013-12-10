@@ -46,17 +46,18 @@ get_header();
                     </div>
                     <div class="list-wrap">
                     	<ul id="s-pic-list">
-                                <?php
-                                for ($i=1; $i < 7; $i++) {
-                                    if (MultiPostThumbnails::has_post_thumbnail(get_post_type(), "single-image-$i")){
-                                        echo '<li><img src="'
-                                        .MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), "single-image-$i", NULL, 'single-image-thumbnail')
-                                        .'" data-big="'
-                                        .MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), "single-image-$i")
-                                        .'" /></li>';
-                                    }
+                            <?php
+                            $the_content = get_the_content();
+                            for ($i=1; $i < 7; $i++) {
+                                if (MultiPostThumbnails::has_post_thumbnail(get_post_type(), "single-image-$i")){
+                                    echo '<li><img src="'
+                                    .MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), "single-image-$i", NULL, 'single-image-thumbnail')
+                                    .'" data-big="'
+                                    .MultiPostThumbnails::get_post_thumbnail_url(get_post_type(), "single-image-$i")
+                                    .'" /></li>';
                                 }
-                                ?>
+                            }
+                            ?>
                         </ul>
                     </div>
                 	<div id="r-b" class="right-btn">
@@ -74,7 +75,7 @@ get_header();
                     <div class="info-wrap">
                         <p class="info-p">
                             <?php the_excerpt() ?>
-                        </p>                    
+                        </p>
                     </div>
                     
                     <div class="fw-wrap">
@@ -85,6 +86,7 @@ get_header();
                     	
                     	$terms = get_the_terms(get_the_ID(), 'genre');
                     	foreach ($terms as $term) {
+                            // show the style and board.
                             if ($term->parent>0 && ($term->parent == 100 || $term->parent == 400) ){
                                 $term_image_src = z_taxonomy_image_url($term->term_id);
                                 if (!empty($term_image_src)){
@@ -240,7 +242,7 @@ get_header();
                                     </h2>
                                 </div>
                             	<news-title-->
-                                <?php the_content() ?>
+                                <?php echo $the_content ?>
 
                                 <!--以上部分为文章内容-->                                
                                 

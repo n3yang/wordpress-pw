@@ -1,4 +1,3 @@
-
 <?php
 
 $the_page_cat_slug = get_query_var('category_name');
