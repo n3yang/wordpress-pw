@@ -540,6 +540,7 @@
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
+	overflow:hidden
 }
 .no-box ul li a:hover span{
 	background: #f9f9f9
