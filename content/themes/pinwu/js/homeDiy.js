@@ -70,7 +70,9 @@ $(document).ready(function(){
 			}
 		});
 		
-		dd.find("div").click(function(){
+		dd.find("div").click(setOption);
+		setOption();
+		function setOption(){
 			var board = 0,
 				ground = 0,
 				wall = 0,
@@ -112,7 +114,7 @@ $(document).ready(function(){
 				}
 			});
 			
-		})
+		}
 		
 	})()
 	
