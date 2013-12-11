@@ -116,7 +116,9 @@ get_header();
                 </div>
                 
                 <div class="lcad">
-                	<img src="<?php bloginfo('template_url'); ?>/images/diy-btn.gif" />
+                	<a href="/measure">
+                		<img src="<?php bloginfo('template_url'); ?>/images/diy-btn.gif" />
+                    </a>
                 </div>
                 
             </div>
@@ -165,7 +167,7 @@ get_header();
                                     </div>
                                     <div class="p-l-t">
                                         <p><?php the_title() ?><p>
-                                        <P>优惠价<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true); ?></span></P>
+                                        <p>优惠价<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true); ?></span></p>
                                     </div>
                                 </a>
                             </li>
@@ -192,7 +194,7 @@ get_header();
                                     </div>
                                     <div class="p-l-t">
                                         <p><?php the_title() ?><p>
-                                        <P>优惠价<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true); ?></span></P>
+                                        <p>优惠价<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true); ?></span></p>
                                     </div>
                                 </a>
                             </li>
