@@ -140,7 +140,7 @@ get_header();
                     </div>
                     <div class="effect-bigPic-result-link base-clear">
                     	<a id="result_link_l"  href="#" class="result-link-l">查看方案详情</a>
-                        <a class="result-link-r" href="#"></a>
+                        <a class="result-link-r" href="/measure"></a>
                     </div>
             	</div>
                 <div id="effect_choose" class="effect-choose">
