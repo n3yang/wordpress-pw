@@ -5,7 +5,8 @@ $(document).ready(function () {
 	  fields: {
 		'#login_username': {
 		  required: true,
-		  message: '您输入的用户名有误'
+		  message: '您输入的用户名有误',
+		  test: happy.isName 
 		},
 		'#login_password': {
 		  required: true,
