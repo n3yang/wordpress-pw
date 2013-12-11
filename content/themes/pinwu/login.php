@@ -32,7 +32,7 @@ if (isset($_POST['signup_submit'])) {
 	$error = '';
 	if (empty($_POST['username'])){
 		$error = '请输入用户名';
-	} else if (preg_grep('/^[a-z0-9\_]+$/i', $_POST['username'])) {
+	} else if (!preg_grep('/^[a-z0-9\_]+$/i', $_POST['username'])) {
         $error = '用户名只能输入英文和数字';
     } else if (empty($_POST['password'])) {
 		$error = '请输入密码';
