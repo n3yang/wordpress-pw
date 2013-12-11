@@ -16,13 +16,14 @@
 							$posts = get_posts(array('category'=>20));
 							foreach ($posts as $post):
 						?>
-						<li><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(689,358), array('alt'=>get_the_title())) ?></a>
+						<li><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(690,358), array('alt'=>get_the_title())) ?></a>
 						</li>
 						<?php endforeach ?>
 
 					</ul>
 				</div>
 				<div class="slide-small">
+                	<h1></h1>
 					<ul class="slide-nav">
 						<li>
 							<i></i>
