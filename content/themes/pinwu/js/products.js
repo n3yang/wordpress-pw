@@ -46,6 +46,8 @@ $(document).ready(function(){
 			setCookie("ifShowPic", "yes", 7);
 		});
 		
+		yes.click();
+		
 		if(getCookie("ifShowPic") == "yes"){
 			yes.click();
 		}else{
