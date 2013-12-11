@@ -302,6 +302,7 @@ function register_my_custom_menu_page(){
 	remove_submenu_page('themes.php', 'customize.php');
 	remove_submenu_page('themes.php', 'widgets.php');
 	remove_submenu_page('index.php', 'update-core.php');
+	remove_menu_page('tools.php');
 	remove_menu_page('plugins.php');
 	remove_submenu_page('edit.php?post_type=measure', 'post-new.php?post_type=measure');
 	remove_meta_box('tagsdiv-post_tag', 'post', 'normal');

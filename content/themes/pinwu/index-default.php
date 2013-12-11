@@ -176,11 +176,11 @@
 	<!--path-info-->
 	<div class="path-info other-box base-clear">
 		<h1><em>1F</em>功能定制</h1>
+		<div class="path-l">
 		<?php
 			$posts = get_posts(array('category'=>21, 'posts_per_page'=>2));
 			foreach ($posts as $post):
 		?>
-		<div class="path-l">
 			<div class="path-img-wrap">
 				<a href="<?php the_permalink() ?>" class="path-a">
 					<b></b>
