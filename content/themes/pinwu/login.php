@@ -22,7 +22,9 @@ if (isset($_POST['login_submit'])) {
 	$result = wp_signon($creds);
 	if (is_wp_error($result)) {
 		$login_error = preg_replace('/<a(.*)<\/a>？/', '', $result->get_error_message());
-	}
+	} else {
+        exit('<script type="text/javascript" charset="utf-8">alert("登陆成功");location.href="/"</script>');
+    }
 }
 
 // do sign up
