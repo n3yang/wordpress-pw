@@ -60,7 +60,7 @@ $the_page_paged = get_query_var('paged');
 										?>
                                         <li>
                                             <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                            <span><?php the_date() ?></span>
+                                            <span><?php echo get_the_date() ?></span>
                                         </li>
                                     	<?php endwhile;} ?>
                                     </ul>

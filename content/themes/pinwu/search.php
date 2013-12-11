@@ -46,7 +46,7 @@ $search_query = get_search_query();
 										?>
                                         <li>
                                             <a href="<?php the_permalink() ?>" target="_blank"><?php the_title() ?></a>
-                                            <span><?php the_date() ?></span>
+                                            <span><?php echo get_the_date() ?></span>
                                         </li>
                                     	<?php
                                             endwhile;
