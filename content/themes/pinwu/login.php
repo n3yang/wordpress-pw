@@ -32,7 +32,9 @@ if (isset($_POST['signup_submit'])) {
 	$error = '';
 	if (empty($_POST['username'])){
 		$error = '请输入用户名';
-	} else if (empty($_POST['password'])) {
+	} else if (preg_grep('/^[a-z0-9\_]+$/i', $_POST['username'])) {
+        $error = '用户名只能输入英文和数字';
+    } else if (empty($_POST['password'])) {
 		$error = '请输入密码';
 	} else if ($_POST['r_password']!=$_POST['password']){
 		$error = '两次输入的密码不一样';
@@ -46,8 +48,8 @@ if (isset($_POST['signup_submit'])) {
 	if (!$error){
 		$user_id = wp_create_user( $_POST['username'], $_POST['password'], $_POST['email'] );
 		if ($user_id && !empty($_POST['tel'])) {
-           update_user_meta($user_id, 'tel', $_POST['tel']);
-           exit('<script type="text/javascript" charset="utf-8">alert("注册成功");location.href="/"</script>');
+            update_user_meta($user_id, 'tel', $_POST['tel']);
+            exit('<script type="text/javascript" charset="utf-8">alert("注册成功");location.href="/"</script>');
 		} else {
             exit('<script type="text/javascript" charset="utf-8">alert("注册失败");location.href="/"</script>');
         }
