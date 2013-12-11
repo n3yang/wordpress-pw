@@ -54,7 +54,7 @@
 		<div class="main-r">
 			
 			<div class="main-img-link">
-				<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/path-btn.gif" alt=""></a>
+				<a href="/measure"><img src="<?php bloginfo('template_url'); ?>/images/path-btn.gif" alt=""></a>
 			</div>
 			<div class="main-img-link">
 				<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/main-ad.gif" alt=""></a>
