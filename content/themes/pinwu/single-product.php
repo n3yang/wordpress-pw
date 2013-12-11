@@ -47,7 +47,6 @@ get_header();
                     <div class="list-wrap">
                     	<ul id="s-pic-list">
                             <?php
-                            $the_content = get_the_content();
                             for ($i=1; $i < 7; $i++) {
                                 if (MultiPostThumbnails::has_post_thumbnail(get_post_type(), "single-image-$i")){
                                     echo '<li><img src="'
@@ -83,6 +82,8 @@ get_header();
                     
                     <div class="material">
                     	<?php 
+
+                        $the_content = $post->post_content;
                     	
                     	$terms = get_the_terms(get_the_ID(), 'genre');
                     	foreach ($terms as $term) {

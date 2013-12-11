@@ -298,11 +298,11 @@ add_action( 'admin_menu', 'register_my_custom_menu_page' );
 function register_my_custom_menu_page(){
 	// add_menu_page( 'custom menu title', 'custom menu', 'manage_options', '/aa/test.php', '', '', 8 );
 	remove_menu_page('edit-comments.php');
-	// remove_submenu_page('themes.php', 'themes.php');
+	remove_submenu_page('themes.php', 'themes.php');
 	remove_submenu_page('themes.php', 'customize.php');
 	remove_submenu_page('themes.php', 'widgets.php');
 	remove_submenu_page('index.php', 'update-core.php');
-	// remove_menu_page('plugins.php');
+	remove_menu_page('plugins.php');
 	remove_submenu_page('edit.php?post_type=measure', 'post-new.php?post_type=measure');
 	remove_meta_box('tagsdiv-post_tag', 'post', 'normal');
 
