@@ -420,7 +420,7 @@
 		<h1><em>6F</em>我秀我家</h1>
 		<ul class="base-clear">
 		<?php
-		$posts = get_posts(array('posts_per_page'=>7, 'category'=> 25));
+		$posts = get_posts(array('posts_per_page'=>7, 'category'=> 26));
 		foreach ($posts as $post) :
 		?>
 			<li>
