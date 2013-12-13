@@ -293,13 +293,24 @@ add_action( 'admin_menu', 'register_my_custom_menu_page' );
 function register_my_custom_menu_page(){
 	// add_menu_page( 'custom menu title', 'custom menu', 'manage_options', '/aa/test.php', '', '', 8 );
 	remove_menu_page('edit-comments.php');
+	remove_menu_page('tools.php');
+	remove_menu_page('plugins.php');
 	remove_submenu_page('themes.php', 'themes.php');
 	remove_submenu_page('themes.php', 'customize.php');
 	remove_submenu_page('themes.php', 'widgets.php');
 	remove_submenu_page('index.php', 'update-core.php');
-	remove_menu_page('tools.php');
-	remove_menu_page('plugins.php');
 	remove_submenu_page('edit.php?post_type=measure', 'post-new.php?post_type=measure');
+	remove_submenu_page('edit.php', 'edit-tags.php?taxonomy=post_tag');
+
+	remove_submenu_page('options-general.php', 'options-general.php');
+	remove_submenu_page('options-general.php', 'options-reading.php');
+	remove_submenu_page('options-general.php', 'options-discussion.php');
+	remove_submenu_page('options-general.php', 'options-permalink.php');
+	remove_submenu_page('options-general.php', 'options-general.php?page=zci-options');
+
+	// post page
+	remove_meta_box('commentstatusdiv', 'post', 'normal');
+	remove_meta_box('commentsdiv', 'post', 'normal');
 	remove_meta_box('tagsdiv-post_tag', 'post', 'normal');
 
 	// customize dashboard
@@ -312,6 +323,8 @@ function register_my_custom_menu_page(){
 	remove_meta_box('dashboard_primary', 'dashboard', 'side');   // WordPress blog
 	remove_meta_box('dashboard_secondary', 'dashboard', 'side');   // Other WordPress News
 	remove_meta_box('welcome_panel', 'dashboard', 'normal');   // Other WordPress News
+
+
 	add_meta_box('dashboard_welcome_custmoized', '感谢', function(){echo '感谢使用';}, 'dashboard', 'normal');
 	add_filter('admin_footer_text', function(){});
 	add_filter('update_footer', function(){echo '感谢使用';});
