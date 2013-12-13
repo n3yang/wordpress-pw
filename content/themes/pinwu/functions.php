@@ -316,6 +316,10 @@ function register_my_custom_menu_page(){
 	add_filter('admin_footer_text', function(){});
 	add_filter('update_footer', function(){echo '感谢使用';});
 }
+// remove the logo in admin login page
+add_action('login_head', function(){
+	echo '<style type="text/css">h1 a {background-image: none !important; }</style>';
+});
 // show admin bar never
 show_admin_bar(false);
 add_action( 'admin_bar_menu', 'remove_wp_admin_bar', 999 );
