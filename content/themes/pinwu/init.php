@@ -26,7 +26,8 @@ INSERT INTO `wp_term_taxonomy` VALUES (25, 25, 'category', '', 0, 0);
 INSERT INTO `wp_terms` VALUES (26, '我秀我家', '26', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (26, 26, 'category', '', 0, 0);
 
-
+INSERT INTO `wp_terms` VALUES (27, '视频展示', 'video', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (27, 27, 'category', '', 0, 0);
 
 
 -- 产品大类

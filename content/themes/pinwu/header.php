@@ -140,7 +140,7 @@
 					<a href="#" title="智能家居">智能家居</a>
 				</li>
 				<li>
-					<a href="#" title="视频展示">视频展示</a>
+					<a href="/article/category/video" title="视频展示">视频展示</a>
 				</li>
 				<li>
 					<a href="#" title="定制导购">定制导购</a>

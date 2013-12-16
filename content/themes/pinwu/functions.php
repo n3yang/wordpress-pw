@@ -56,7 +56,9 @@ function create_product_taxonomies() {
 
 
 add_theme_support('post-thumbnails');
+// add_theme_support('post-formats', array('video') );
 // add_theme_support('post-formats',array('gallery'));
+
 add_action('init','create_product_post_type');
 function create_product_post_type(){ 
 	$post_type="product";
@@ -312,6 +314,7 @@ function register_my_custom_menu_page(){
 	remove_meta_box('commentstatusdiv', 'post', 'normal');
 	remove_meta_box('commentsdiv', 'post', 'normal');
 	remove_meta_box('tagsdiv-post_tag', 'post', 'normal');
+	remove_meta_box('trackbacksdiv', 'post', 'normal');
 
 	// customize dashboard
 	remove_meta_box('dashboard_right_now', 'dashboard', 'normal');   // Right Now
@@ -347,7 +350,6 @@ add_action( 'load-index.php', function () {
 });
 
 /********** customize the admin panel **********/
-
 
 
 
