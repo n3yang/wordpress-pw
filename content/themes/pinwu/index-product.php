@@ -34,7 +34,7 @@ $nav_nth = $setting['nav_nth'];
 
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style/products.css"/>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/products.js"></script>
-    <script type="text/javascript">nav_active_nth=<?php echo $nav_nth;?></script>
+    <script type="text/javascript">var nav_active_nth=<?php echo $nav_nth;?></script>
 	<!--ListOfProducts-->
     <div class="main">
     	

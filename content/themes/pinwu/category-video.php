@@ -25,6 +25,7 @@ get_header();
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style/products.css"/>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/products.js"></script>
+	<script type="text/javascript">var nav_active_nth=9</script>
 	
 	<!--ListOfProducts-->
 	<div class="main">
