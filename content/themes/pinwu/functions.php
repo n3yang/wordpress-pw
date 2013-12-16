@@ -10,6 +10,7 @@
 // turn off auto update
 remove_action( 'wp_version_check', 'wp_version_check' );
 add_filter( 'pre_site_transient_update_core', function(){return;});
+remove_action('wp_head', 'wp_generator');
 
 // 
 add_filter('the_permalink', function($a){
