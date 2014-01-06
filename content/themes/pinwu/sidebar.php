@@ -33,7 +33,7 @@
                         	<li>
                             	<a href="<?php the_permalink() ?>">
                                     <div class="p-l-i">
-                                        <?php the_post_thumbnail(array(140,140)) ?>
+                                        <?php the_post_thumbnail(array(200, 151)) ?>
                                     </div>
                                     <div class="p-l-t">
                                         <p><?php the_title() ?><p>
@@ -60,7 +60,7 @@
                         	<li>
                             	<a href="<?php the_permalink() ?>">
                                     <div class="p-l-i">
-                                        <?php the_post_thumbnail(array(140,140)) ?>
+                                        <?php the_post_thumbnail(array(200, 151)) ?>
                                     </div>
                                     <div class="p-l-t">
                                         <p><?php the_title() ?><p>

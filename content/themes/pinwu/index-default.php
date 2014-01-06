@@ -16,7 +16,7 @@
 							$posts = get_posts(array('category'=>20));
 							foreach ($posts as $post):
 						?>
-						<li><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(690,358), array('alt'=>get_the_title())) ?></a>
+						<li><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(690,398), array('alt'=>get_the_title())) ?></a>
 						</li>
 						<?php endforeach ?>
 
