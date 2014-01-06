@@ -57,7 +57,7 @@ $nav_nth = $setting['nav_nth'];
                         	<li>
                             	<a href="<?php the_permalink() ?>">
                                     <div class="p-l-i">
-                                        <?php the_post_thumbnail(array(300, 225)) ?>
+                                        <?php the_post_thumbnail(array(200, 151)) ?>
                                     </div>
                                     <div class="p-l-t">
                                         <p><?php the_title() ?><p>
@@ -85,7 +85,7 @@ $nav_nth = $setting['nav_nth'];
                         	<li>
                             	<a href="<?php the_permalink() ?>">
                                     <div class="p-l-i">
-                                        <?php the_post_thumbnail(array(300, 225)) ?>
+                                        <?php the_post_thumbnail(array(200, 151)) ?>
                                     </div>
                                     <div class="p-l-t">
                                         <p><?php the_title() ?><p>
