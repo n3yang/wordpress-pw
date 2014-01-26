@@ -98,7 +98,7 @@ if ($_POST['submit']){
 							<?php
 							$args = array(
 								'post_type'			=> 'question',
-								'posts_per_page'	=> 1,
+								'posts_per_page'	=> 15,
 								'paged'				=> $paged>1 ? $paged : 1
 							);
 							$posts = query_posts($args);
