@@ -5,7 +5,7 @@ $cat = get_term_by( 'slug', $the_page_cat_slug, 'category' );
 $the_page_cat_name = !is_object($cat) ? '' : $cat->name;
 $the_page_paged = get_query_var('paged');
 
-get_header(); 
+get_header();
 ?>
 	<!--Crumbs
 	<div class="crumbs base-clear">

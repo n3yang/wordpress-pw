@@ -24,10 +24,5 @@ var happy = {
   
   isMob: function(val){
 	return /^1\d{10}$/.test(val)  	
-  },
-  
-  isName: function(val){
-	var a  = /^[a-z0-9\_]+$/i;
-	return a.test(val)
   }
 };

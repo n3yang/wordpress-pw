@@ -69,6 +69,7 @@
 }
 .p-l-i img{
 	width:200px;
+	height:130px;
 }
 .p-l-t{
 	text-align:center;
@@ -1005,4 +1006,7 @@ p.qa-a-t{
 	-moz-border-radius: 2px;
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
+}
+.qa_list_box .unhappyMessage{
+	left:380px
 }

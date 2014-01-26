@@ -317,10 +317,8 @@
 	line-height: 18px;
 }
 .path-img-wrap a .path-text i{
-	width:200px;
 	height: 18px;
 	float: left;
-	overflow:hidden;
 }
 .path-img-wrap a .path-text em{
 	float: right;
@@ -333,7 +331,6 @@
 	width: 61px;
 	height: 18px;
 	background: url(../images/look.gif) 0 -18px no-repeat;
-	overflow:hidden;
 }
 .ask-wrap{
 	height: 108px;

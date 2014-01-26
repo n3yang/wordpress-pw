@@ -5,20 +5,13 @@ $(document).ready(function () {
 	  fields: {
 		'#login_username': {
 		  required: true,
-		  message: '您输入的用户名有误',
-		  test: happy.isName 
+		  message: '您输入的用户名有误'
 		},
 		'#login_password': {
 		  required: true,
 		  message: '您输入的密码有误',
 		  test: happy.ispassword 
-		},
-		/*
-		'#v_code': {
-		  required: true,
-		  message: '您输入的验证码有误'
 		}
-		*/
 	  }
 	});
 	
@@ -49,13 +42,34 @@ $(document).ready(function () {
 		  required: true,
 		  message: '您输入的手机号码有误',
 		  test: happy.isMob
-		},
-		/*
-		'#v_code_reg': {
-		  required: true,
-		  message: '您输入的验证码有误'
 		}
-		*/
 	  }
 	});
+	
+
+	$('#qa').isHappy({
+	  fields: {
+		'#qa_title': {
+		  required: true,
+		  message: '请输入标题，标题不能为空'
+		},
+		'#qa_con': {
+		  required: true,
+		  message: '请输入内容，内容不能为空'
+		}
+	  }
+	});
+	
+	
+	$(".q_a").hover(function(){
+		$(this).find("a").animate({
+			top: -60
+		},300)
+	},function(){
+		$(this).find("a").animate({
+			top: 0
+		},300)
+	})
+	
+	
 }); 
