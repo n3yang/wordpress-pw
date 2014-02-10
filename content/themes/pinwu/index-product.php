@@ -160,6 +160,12 @@ $tax_query[] = array(
 	'field'		=> 'id',
 	'terms'		=> $genre_obj->term_id,
 );
+$tax_query[] = array(
+	'taxonomy'	=> 'genre',
+	'field'		=> 'id',
+	'terms'		=> range(80, 89),
+	'operator'	=> 'NOT IN',
+);
 
 $args = array(
 	'post_type'			=> 'product',

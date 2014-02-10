@@ -56,6 +56,24 @@ INSERT INTO `wp_term_taxonomy` VALUES (77, 77, 'genre', '', 0, 0);
 INSERT INTO `wp_terms` VALUES (78, 'DIY推荐', 'top-diy', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (78, 78, 'genre', '', 0, 0);
 
+-- DIY 展示
+INSERT INTO `wp_terms` VALUES (80, 'DIY展示', '80', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (80, 80, 'genre', '', 0, 0);
+
+INSERT INTO `wp_terms` VALUES (81, '卧房', '81', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (81, 81, 'genre', '', 80, 0);
+
+INSERT INTO `wp_terms` VALUES (82, '书房', '82', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (82, 82, 'genre', '', 80, 0);
+
+INSERT INTO `wp_terms` VALUES (83, '衣柜', '83', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (83, 83, 'genre', '', 80, 0);
+
+INSERT INTO `wp_terms` VALUES (84, '青少年', '84', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (84, 84, 'genre', '', 80, 0);
+
+INSERT INTO `wp_terms` VALUES (85, '门的世界', '85', 0);
+INSERT INTO `wp_term_taxonomy` VALUES (85, 85, 'genre', '', 80, 0);
 
 -- 风格
 INSERT INTO `wp_terms` VALUES (100, '风格', '100', 0);
