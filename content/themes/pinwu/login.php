@@ -32,7 +32,7 @@ if (isset($_POST['signup_submit'])) {
 	$error = '';
 	if (empty($_POST['username'])){
 		$error = '请输入用户名';
-	} else if (!preg_grep('/^[a-z0-9\_]+$/i', $_POST['username'])) {
+	} else if (!preg_match('/^[a-zA-Z0-9\_]+$/i', $_POST['username'])) {
         $error = '用户名只能输入英文和数字';
     } else if (empty($_POST['password'])) {
 		$error = '请输入密码';
@@ -51,9 +51,11 @@ if (isset($_POST['signup_submit'])) {
             update_user_meta($user_id, 'tel', $_POST['tel']);
             exit('<script type="text/javascript" charset="utf-8">alert("注册成功");location.href="/"</script>');
 		} else {
-            exit('<script type="text/javascript" charset="utf-8">alert("注册失败");location.href="/"</script>');
+            exit('<script type="text/javascript" charset="utf-8">alert("注册失败");location.href="/login"</script>');
         }
-	}
+	} else {
+        exit('<script type="text/javascript" charset="utf-8">alert("'.$error.'");history.</script>');
+    }
 }
 ?>
 <?php get_header(); ?>
