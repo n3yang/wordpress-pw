@@ -42,7 +42,7 @@ $posts = query_posts(array('p'=>$the_page_post_id));
 if (have_posts()){
 	the_post(); 
 	$cats = get_the_category($post->ID);
-	if (count($cats)>1){
+	if (count($cats)>0){
 		$cat_name = $cats[0]->cat_name;
 	}
 }
