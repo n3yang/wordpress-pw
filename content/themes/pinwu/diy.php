@@ -109,7 +109,7 @@ get_header();
                 	<ul id="scroll2">
                 		<?php
                 		// get the feature term with thumb
-                		$terms = get_terms('genre', array('parent'=>200, 'hide_empty'=>1, 'orderby'=>'slug'));
+                		$terms = get_terms('genre', array('parent'=>80, 'hide_empty'=>1, 'orderby'=>'slug'));
                 		foreach ($terms as $key => $term) {
                 			$thumb = z_taxonomy_image_url($term->term_id);
                 			if (!empty($thumb)){
