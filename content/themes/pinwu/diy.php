@@ -8,7 +8,7 @@
  */
 
 // the default feature
-$filters['feature_id'] = !empty($_REQUEST['feature']) ? intval($_REQUEST['feature']) : 81;
+$filters['feature_id'] = !empty($_REQUEST['feature']) ? intval($_REQUEST['feature']) : 201;
 $filters['board_id'] = !empty($_REQUEST['board']) ? intval($_REQUEST['board']) : 0;
 $filters['ground_id'] = !empty($_REQUEST['ground']) ? intval($_REQUEST['ground']) : 0;
 $filters['wall_id'] = !empty($_REQUEST['wall']) ? intval($_REQUEST['wall']) : 0;
