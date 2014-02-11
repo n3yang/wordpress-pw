@@ -8,7 +8,7 @@
  */
 
 // the default feature
-$filters['feature_id'] = !empty($_REQUEST['feature']) ? intval($_REQUEST['feature']) : 201;
+$filters['feature_id'] = !empty($_REQUEST['feature']) ? intval($_REQUEST['feature']) : 81;
 $filters['board_id'] = !empty($_REQUEST['board']) ? intval($_REQUEST['board']) : 0;
 $filters['ground_id'] = !empty($_REQUEST['ground']) ? intval($_REQUEST['ground']) : 0;
 $filters['wall_id'] = !empty($_REQUEST['wall']) ? intval($_REQUEST['wall']) : 0;
@@ -46,6 +46,7 @@ if ($_REQUEST['method']=='ajax') {
 
 
 // get the wall/board/ground's setting with page_feature_id from function.php
+/*
 $settings = pinwu_get_product_setting();
 foreach ($settings as $setting) {
 	if (in_array($filters['feature_id'], $setting['feature'])) {
@@ -54,6 +55,12 @@ foreach ($settings as $setting) {
 		$page_grounds = $setting['ground'];
 	}
 }
+*/
+// get the wall/board/ground's same setting 
+$page_boards = range(401, 410);
+$page_walls = range(501, 510);
+$page_grounds = range(601, 610);
+
 
 // show header
 get_header();
