@@ -347,19 +347,8 @@ add_action( 'load-index.php', function () {
 
 /********** the video **********/
 /**
- * how to get the logo of youku video
- */
-// $request = 'http://v.youku.com/player/getPlayList/VideoIDS/XNTA5NTkzNTM2/';
-// $response = wp_remote_get( $request, array( 'sslverify' => false ) );
-// $result = json_decode( $response['body'] );
-// $result = $result->data[0]->logo;
-/**
- * 
- * @param  [type] $matches [description]
- * @param  [type] $attr    [description]
- * @param  [type] $url     [description]
- * @param  [type] $rawattr [description]
- * @return [type]          [description]
+ * unregister the youku handler (in zh_CN.php)
+ * register new handler: youku_center
  */
 wp_embed_unregister_handler('youku');
 function wp_embed_handler_youku_center( $matches, $attr, $url, $rawattr ) {
