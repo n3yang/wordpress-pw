@@ -282,14 +282,6 @@ add_action('manage_measure_posts_custom_column', function($column) {
 
 /********** customize measure post END **********/
 
-/**
- * how to get the logo of youku video
- */
-// $request = 'http://v.youku.com/player/getPlayList/VideoIDS/XNTA5NTkzNTM2/';
-// $response = wp_remote_get( $request, array( 'sslverify' => false ) );
-// $result = json_decode( $response['body'] );
-// $result = $result->data[0]->logo;
-
 
 /********** customize the admin pannel ***********/
 add_action( 'admin_menu', 'register_my_custom_menu_page' );
@@ -351,6 +343,38 @@ add_action( 'load-index.php', function () {
 });
 
 /********** customize the admin panel **********/
+
+
+/********** the video **********/
+/**
+ * how to get the logo of youku video
+ */
+// $request = 'http://v.youku.com/player/getPlayList/VideoIDS/XNTA5NTkzNTM2/';
+// $response = wp_remote_get( $request, array( 'sslverify' => false ) );
+// $result = json_decode( $response['body'] );
+// $result = $result->data[0]->logo;
+/**
+ * 
+ * @param  [type] $matches [description]
+ * @param  [type] $attr    [description]
+ * @param  [type] $url     [description]
+ * @param  [type] $rawattr [description]
+ * @return [type]          [description]
+ */
+wp_embed_unregister_handler('youku');
+function wp_embed_handler_youku_center( $matches, $attr, $url, $rawattr ) {
+	$embed = sprintf(
+		'<p style="text-align:center"><embed src="http://player.youku.com/player.php/sid/%1$s/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></p>',
+		esc_attr( $matches['video_id'] ) );
+
+	return apply_filters( 'embed_youku_center', $embed, $matches, $attr, $url, $rawattr );
+}
+wp_embed_register_handler( 'youku_center',
+	'#https?://v\.youku\.com/v_show/id_(?<video_id>[a-z0-9_=\-]+)#i',
+	'wp_embed_handler_youku_center' );
+
+
+/********** the video end **********/
 
 
 

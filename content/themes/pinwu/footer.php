@@ -59,13 +59,7 @@
 				<li>
 					<span class="base-clear">
 						<em>朝阳分店：</em>
-						<p>朝阳区熊市口路甲85250号<br>TEL 010-56565645<img src="<?php bloginfo('template_url'); ?>/images/look-map.gif" /><p>
-					</span>
-				</li>
-				<li>
-					<span class="base-clear">
-						<em>朝阳分店：</em>
-						<p>朝阳区熊市口路甲85250号<br>TEL 010-56565645<img src="<?php bloginfo('template_url'); ?>/images/look-map.gif" /><p>
+						<p>北京市十里河居然靓屋灯饰城5-020<br>TEL 010-87373685<img src="<?php bloginfo('template_url'); ?>/images/look-map.gif" /><p>
 					</span>
 				</li>
 			</ul>

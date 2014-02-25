@@ -232,7 +232,7 @@
 		?>
 		<div class="big-pic-show">
 			<a href="<?php the_permalink() ?>">
-				<i><?php the_post_thumbnail(array(400,400)) ?></i>
+				<i><?php the_post_thumbnail(array(400,305)) ?></i>
 				<span><?php the_title() ?></span>
 			</a>
 		</div>
@@ -255,7 +255,7 @@
 				<?php foreach ($posts as $post): ?>
 					<li>
 						<a href="<?php the_permalink() ?>">
-							<i><?php the_post_thumbnail(array(140,140)) ?></i>
+							<i><?php the_post_thumbnail(array(140,105)) ?></i>
 							<span><?php the_title() ?></span>
 						</a>
 					</li>
@@ -277,7 +277,7 @@
 		?>
 		<div class="big-pic-show">
 			<a href="<?php the_permalink() ?>">
-				<i><?php the_post_thumbnail(array(400,400)) ?></i>
+				<i><?php the_post_thumbnail(array(400,305)) ?></i>
 				<span><?php the_title() ?></span>
 			</a>
 		</div>
@@ -302,7 +302,7 @@
 					<li>
 						<a href="<?php the_permalink() ?>">
 							<i>
-								<?php the_post_thumbnail(array(140, 140)) ?>
+								<?php the_post_thumbnail(array(140, 105)) ?>
 							</i>
 							<span><?php the_title() ?></span>
 						</a>
@@ -334,7 +334,7 @@
 		?>
 		<div class="big-pic-show">
 			<a href="#">
-				<i><?php the_post_thumbnail(array(400, 400)) ?></i>
+				<i><?php the_post_thumbnail(array(400, 305)) ?></i>
 				<span><?php the_title() ?></span>
 			</a>
 		</div>
@@ -358,7 +358,7 @@
 					<?php foreach ($posts as $post): ?>
 					<li>
 						<a href="<?php the_permalink() ?>">
-							<i><?php the_post_thumbnail(array(140, 140)) ?></i>
+							<i><?php the_post_thumbnail(array(140, 105)) ?></i>
 							<span><?php the_title() ?></span>
 						</a>
 					</li>
@@ -380,7 +380,7 @@
 		?>
 		<div class="big-pic-show">
 			<a href="<?php the_permalink() ?>">
-				<i><?php the_post_thumbnail(array(400, 400)) ?></i>
+				<i><?php the_post_thumbnail(array(400, 305)) ?></i>
 				<span><?php the_title() ?></span>
 			</a>
 		</div>
@@ -404,7 +404,7 @@
 					<?php foreach($posts as $post): ?>
 					<li>
 						<a href="<?php the_permalink() ?>">
-							<i><?php the_post_thumbnail(array(140, 140)) ?></i>
+							<i><?php the_post_thumbnail(array(140, 105)) ?></i>
 							<span><?php the_title() ?></span>
 						</a>
 					</li>
@@ -425,7 +425,7 @@
 		?>
 			<li>
 				<a href="<?php the_permalink() ?>">
-					<i><?php the_post_thumbnail(array(140, 140)) ?></i>
+					<i><?php the_post_thumbnail(array(150, 113)) ?></i>
 					<span><?php the_title() ?></span>
 				</a>
 			</li>
