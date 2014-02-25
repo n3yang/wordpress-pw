@@ -173,7 +173,7 @@ get_header();
 							?>
                         </dd>
                     </dl>
-                    <dl class="base-clear default">
+                    <dl class="base-clear">
                     	<dt>选择地面</dt>
                         <dd data-name="ground">
                         	<?php
@@ -195,7 +195,7 @@ get_header();
 							?>
                         </dd>
                     </dl>
-                    <dl class="base-clear default">
+                    <dl class="base-clear">
                     	<dt>选择墙面</dt>
                         <dd data-name="wall">
                         	<?php
