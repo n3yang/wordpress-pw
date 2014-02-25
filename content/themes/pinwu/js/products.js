@@ -92,7 +92,7 @@ $(document).ready(function(){
 		
 		function an(n){
 			li.removeClass("active").eq(n).addClass("active");
-			b.attr("src", "images/t.png");
+			b.attr("src", "/content/themes/pinwu/images/t.png");
 			loadImage(li.eq(n).find("img").attr("data-big"), n)
 			u.animate({"left":n*-175},200);
 		}
