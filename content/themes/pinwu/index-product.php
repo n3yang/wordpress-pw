@@ -134,8 +134,8 @@ $nav_nth = $setting['nav_nth'];
                         	<div class="t base-clear">
                             	<span>筛选结果</span>
                             	<div class="handover">
-                                	<a id="noPicText" class="active" title="文本展示" href="javascript:;"></a>
-                                	<a id="PicText" title="图文列表" href="javascript:;"></a>
+                                	<a id="noPicText" class="active" title="大图列表" href="javascript:;"></a>
+                                	<a id="PicText" title="小图列表" href="javascript:;"></a>
                             	</div>
                             </div>
                         </div>
