@@ -88,18 +88,38 @@ get_header();
                     	$terms = get_the_terms(get_the_ID(), 'genre');
                     	foreach ($terms as $term) {
                             // show the style and board.
-                            if ($term->parent>0 && ($term->parent == 100 || $term->parent == 400) ){
+                            if ($term->parent>0 && $term->parent == 400 ){
                                 $term_image_src = z_taxonomy_image_url($term->term_id);
                                 if (!empty($term_image_src)){
                                     $term_parent = get_term($term->parent, 'genre');
-                                    echo '<p>'.$term_parent->name.'：<span class="mater-pic"><b></b>';
-                                    echo '<img src="'.$term_image_src.'" />';
-                                    echo '</span><span class="ms">'.$term->description.'</span></p>'."\n";
+                                    echo '<p>当前'.$term_parent->name.'：<span class="mater-pic"><b></b>';
+                                    echo '<img src="'.$term_image_src.'" /></span></p>'."\n";
                                 }
+                                // only 1
+                                break;
                             }
                     	}
-                    	
                     	?>
+                        <p>可选板材：<span class="select-pic-wrap showSelectBox" title="点击展开">
+                                        <span class="select-pic-box">
+                        <?php
+                            $terms = get_terms('genre', array('include'=>range(400,410), 'hide_empty'=>1, 'orderby'=>'slug'));
+                            foreach ($terms as $term):
+                                $thumb_url = z_taxonomy_image_url($term->term_id);
+                                if ($thumb_url):
+
+                        ?>
+                                            <span class="select-pic">
+                                                <img src="<?php echo $thumb_url ?>" >
+                                            </span>
+                        <?php
+                                endif;
+                            endforeach;
+                        ?>
+                                        </span>
+                                    </span>
+                        </p>
+
                         <div class="tip">该套餐款式可设计，尺寸可变化，颜色可选择，预算可高低。</div>
                     </div>
                     
