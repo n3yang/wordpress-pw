@@ -241,7 +241,7 @@ get_header();
         	?>
             <li>
                 <a href="<?php the_permalink() ?>">
-                    <i><?php the_post_thumbnail(array(140,140)) ?></i>
+                    <i><?php the_post_thumbnail(array(150,113)) ?></i>
                     <span><?php the_title() ?></span>
                 </a>
             </li>
