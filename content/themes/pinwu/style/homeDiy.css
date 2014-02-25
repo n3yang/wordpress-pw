@@ -274,23 +274,23 @@
 .no-box ul li{
 	float: left;
 	width: 150px;
-	height: 190px;
+	height: 153px;
 	margin:0 6px;
 }
 .no-box ul li a{
 	display: block;
 	width: 150px;
-	height: 190px;
+	height: 153px;
 }
 .no-box ul li a i{
 	width: 150px;
-	height: 150px;
+	height: 113px;
 	line-height: 0;
 	overflow: hidden;
 }
 .no-box ul li a i img{
 	width: 150px;
-	height: 150px;
+	height: 113px;
 }
 .no-box ul li a span{
 	display: inline-block;

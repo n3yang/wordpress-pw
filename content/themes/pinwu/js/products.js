@@ -38,6 +38,7 @@ $(document).ready(function(){
 			$(this).addClass("active");
 			//box.addClass("noPicTextList");
 			box.addClass("newNoPicList");
+			removeCookie("ifShowPic");
 			setCookie("ifShowPic", "no", 7);
 		});
 		
@@ -46,10 +47,9 @@ $(document).ready(function(){
 			$(this).addClass("active");
 			//box.removeClass("noPicTextList");
 			box.removeClass("newNoPicList");
+			removeCookie("ifShowPic");
 			setCookie("ifShowPic", "yes", 7);
 		});
-		
-		yes.click();
 		
 		if(getCookie("ifShowPic") == "yes"){
 			yes.click();
