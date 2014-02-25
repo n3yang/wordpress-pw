@@ -214,14 +214,14 @@
 }
 .effect-choose dl dd div{
 	float:left;
-	width:50px;
+	width:120px;
 	height:64px;
 	margin:12px 12px 0;
 	cursor:pointer;
 }
 .effect-choose dl dd div .e-c-p{
 	display:block;
-	width:46px;
+	width:116px;
 	height:46px;
 	border:2px solid #eee;
 	line-height:0;
@@ -243,7 +243,7 @@
 }
 .effect-choose dl dd div .e-c-p img{
 	height:46px;
-	width:46px;
+	width:116px;
 }
 .effect-choose dl dd div.active .e-c-p{
 	border:2px solid #e43a3d;

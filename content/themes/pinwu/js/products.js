@@ -32,17 +32,20 @@ $(document).ready(function(){
 		
 		var no = $("#noPicText"), yes = $("#PicText"), box = $("#p-list");
 		
+		box.removeClass("noPicTextList");
 		no.click(function(){
 			yes.removeClass("active");
 			$(this).addClass("active");
-			box.addClass("noPicTextList");
+			//box.addClass("noPicTextList");
+			box.addClass("newNoPicList");
 			setCookie("ifShowPic", "no", 7);
 		});
 		
 		yes.click(function(){
 			no.removeClass("active");
 			$(this).addClass("active");
-			box.removeClass("noPicTextList");
+			//box.removeClass("noPicTextList");
+			box.removeClass("newNoPicList");
 			setCookie("ifShowPic", "yes", 7);
 		});
 		
@@ -78,22 +81,46 @@ $(document).ready(function(){
 		})
 		
 		l.click(function(){
-			n<=0 ? n=0 : n--
+			n<=0 ? n=0 : n--;
 			an(n);
 		})
 		
 		r.click(function(){
-			n>=len-1 ? n=len-1 : n++
+			n>=len-1 ? n=len-1 : n++;
 			an(n);
 		})
 		
 		function an(n){
 			li.removeClass("active").eq(n).addClass("active");
-			b.attr("src", li.eq(n).find("img").attr("data-big"));
+			b.attr("src", "images/t.png");
+			loadImage(li.eq(n).find("img").attr("data-big"), n)
 			u.animate({"left":n*-175},200);
 		}
-		
-		
+
+		//loadImage
+		function loadImage(url, n) {     
+		    var img = new Image(); 
+		    img.onload = function(){
+		        img.onload = null;
+		        b.attr("src", img.src).css("height", 580);
+		    }
+		    img.src = url;
+		    b.css("height", 0);
+		}
+
+	})();
+
+
+	(function(){
+		var obj = $(".select-pic-wrap");
+			obj.toggle(
+				function(){
+					$(this).removeClass('showSelectBox')
+				},
+				function(){
+					$(this).addClass('showSelectBox')
+				}
+			)
 	})();
 	
 })

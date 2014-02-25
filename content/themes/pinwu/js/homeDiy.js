@@ -61,7 +61,7 @@ $(document).ready(function(){
 		var dd = box.find("dd");
 		var xBox = dd.find("div");
 		
-		
+		/*
 		dt.click(function(){
 			dl.addClass("default").find(dd).fadeOut(0);
 			if($(this).parent().hasClass("default")){
@@ -69,6 +69,7 @@ $(document).ready(function(){
 				$(this).parent().removeClass("default")
 			}
 		});
+		*/
 		
 		dd.find("div").click(setOption);
 		setOption();
