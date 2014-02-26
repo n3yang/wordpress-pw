@@ -174,8 +174,8 @@ $args = array(
 	'tax_query'			=> $tax_query
 );
 $posts = query_posts($args);
-if ( have_posts() ){
-while(have_posts()) : the_post();
+if ( have_posts() ) :
+    while(have_posts()) : the_post();
 ?>
                                 <li>
                                     <div class="p-l-i">
@@ -184,16 +184,16 @@ while(have_posts()) : the_post();
                                         </a>
                                     </div>
                                     <div class="p-l-t">
-                                        <p><a href="<?php the_permalink() ?>"><?php the_title(); ?></a><p>
+                                        <p><a href="<?php the_permalink() ?>" target="_blank"><?php the_title(); ?></a><p>
                                         <P>优惠价：<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true);?></span></P>
-                                        <P class="p-btn"><span><a href="#">在线咨询</a></span><span><a href="<?php the_permalink() ?>">详情</a></span></P>
+                                        <p class="p-btn"><span><a href="#">在线咨询</a></span><span><a href="<?php the_permalink() ?>" target="_blank">详情</a></span></p>
                                     </div>
                                 </li>
 <?php
-endwhile;
-} else {
+    endwhile;
+else:
 	echo '<li>没有查询到信息</li>';
-}
+endif;
 ?>
 
                             </ul>
