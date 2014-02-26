@@ -276,8 +276,8 @@ INSERT INTO `wp_term_taxonomy` VALUES (400, 400, 'genre', '', 0, 0);
 INSERT INTO `wp_terms` VALUES (401, '白樱桃', '401', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (401, 401, 'genre', '', 400, 0);
 -- -- 摩卡
-INSERT INTO `wp_terms` VALUES (402, '摩卡', '402', 0);
-INSERT INTO `wp_term_taxonomy` VALUES (402, 402, 'genre', '', 400, 0);
+-- -- INSERT INTO `wp_terms` VALUES (402, '摩卡', '402', 0);
+-- -- INSERT INTO `wp_term_taxonomy` VALUES (402, 402, 'genre', '', 400, 0);
 -- -- 苹果木
 INSERT INTO `wp_terms` VALUES (403, '苹果木', '403', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (403, 403, 'genre', '', 400, 0);
@@ -285,11 +285,11 @@ INSERT INTO `wp_term_taxonomy` VALUES (403, 403, 'genre', '', 400, 0);
 INSERT INTO `wp_terms` VALUES (404, '亚马逊', '404', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (404, 404, 'genre', '', 400, 0);
 -- -- 新柚木
-INSERT INTO `wp_terms` VALUES (405, '新柚木', '405', 0);
-INSERT INTO `wp_term_taxonomy` VALUES (405, 405, 'genre', '', 400, 0);
+-- -- INSERT INTO `wp_terms` VALUES (405, '新柚木', '405', 0);
+-- -- INSERT INTO `wp_term_taxonomy` VALUES (405, 405, 'genre', '', 400, 0);
 -- -- 伊顿蓝橡
-INSERT INTO `wp_terms` VALUES (406, '伊顿蓝橡', '406', 0);
-INSERT INTO `wp_term_taxonomy` VALUES (406, 406, 'genre', '', 400, 0);
+-- -- INSERT INTO `wp_terms` VALUES (406, '伊顿蓝橡', '406', 0);
+-- -- INSERT INTO `wp_term_taxonomy` VALUES (406, 406, 'genre', '', 400, 0);
 -- -- 慕尼黑
 INSERT INTO `wp_terms` VALUES (407, '慕尼黑', '407', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (407, 407, 'genre', '', 400, 0);
@@ -300,8 +300,8 @@ INSERT INTO `wp_term_taxonomy` VALUES (408, 408, 'genre', '', 400, 0);
 INSERT INTO `wp_terms` VALUES (409, '象牙白', '409', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (409, 409, 'genre', '', 400, 0);
 -- -- 丹麦曲柳
-INSERT INTO `wp_terms` VALUES (410, '丹麦曲柳', '410', 0);
-INSERT INTO `wp_term_taxonomy` VALUES (410, 410, 'genre', '', 400, 0);
+-- -- INSERT INTO `wp_terms` VALUES (410, '丹麦曲柳', '410', 0);
+-- -- INSERT INTO `wp_term_taxonomy` VALUES (410, 410, 'genre', '', 400, 0);
 -- -- 北美枫情
 INSERT INTO `wp_terms` VALUES (411, '北美枫情', '411', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (411, 411, 'genre', '', 400, 0);
@@ -309,8 +309,8 @@ INSERT INTO `wp_term_taxonomy` VALUES (411, 411, 'genre', '', 400, 0);
 INSERT INTO `wp_terms` VALUES (412, '中国红木', '412', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (412, 412, 'genre', '', 400, 0);
 -- -- 美国樱桃
-INSERT INTO `wp_terms` VALUES (413, '美国樱桃', '413', 0);
-INSERT INTO `wp_term_taxonomy` VALUES (413, 413, 'genre', '', 400, 0);
+-- -- INSERT INTO `wp_terms` VALUES (413, '美国樱桃', '413', 0);
+-- -- INSERT INTO `wp_term_taxonomy` VALUES (413, 413, 'genre', '', 400, 0);
 -- -- 泰黄金柚
 INSERT INTO `wp_terms` VALUES (414, '泰黄金柚', '414', 0);
 INSERT INTO `wp_term_taxonomy` VALUES (414, 414, 'genre', '', 400, 0);

@@ -176,9 +176,8 @@ if ($_POST['submit']){
 					
 					<div class="qa_merit">
 						<h4>您也可以通过以下方式跟我们联系</h4>
-						<p><strong>公司电话：</strong>86-010-88888888&nbsp;&nbsp;&nbsp;&nbsp;<strong>电子邮箱：</strong>admin@51efc.com</p>	
-						<p><strong>客服电话：</strong>86-010-88888888&nbsp;&nbsp;&nbsp;&nbsp;<strong>邮政编码：</strong>011100</p>
-						<p><strong>公司地址：</strong>北京市朝阳区朝阳公园</p>
+						<p><strong>公司电话：</strong>86-010-87373685&nbsp;&nbsp;&nbsp;&nbsp;<strong>电子邮箱：</strong>51efc@51efc.com</p>
+						<p><strong>公司地址：</strong>北京市十里河居然靓屋灯饰城5-020</p>
 						<p><span><a href="#">在线咨询</a></span></p>
 					</div>
 				

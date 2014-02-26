@@ -57,7 +57,7 @@ foreach ($settings as $setting) {
 }
 */
 // get the wall/board/ground's same setting 
-$page_boards = range(401, 404);
+$page_boards = range(401, 406);
 $page_walls = range(501, 504);
 $page_grounds = range(601, 604);
 
