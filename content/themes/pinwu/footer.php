@@ -33,10 +33,10 @@
 					<a href="#">电话预约</a>
 				</li>
 				<li>
-					<a href="#">在线咨询预约</a>
+					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">在线咨询预约</a>
 				</li>
 				<li>
-					<a href="#">网络申请</a>
+					<a href="/measure/">网络申请</a>
 				</li>
 			</ul>
 			<ul>
@@ -44,7 +44,7 @@
 					<a href="#">全国配送中心</a>
 				</li>
 				<li>
-					<a href="#">售后服务</a>
+					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">售后服务</a>
 				</li>
 			</ul>
 			<ul>
@@ -95,6 +95,16 @@ if (typeof(nav_active_nth)!='undefined') {
 	$('.nav-wrap ul li:nth-child('+nav_active_nth+')').attr('class','active');
 }
 </script>
+<script language="javascript" type="text/javascript">
+<?php $current_user = wp_get_current_user(); ?>
+NTKF_PARAM = {
+  siteid:"kf_9858",                            //Ntalker提供平台基础id,
+  settingid:"kf_9858_1393396291892",          //Ntalker分配的缺省客服组id  
+  uid:"<?php echo $current_user->ID; ?>",                                //用户id
+  uname:"<?php echo $current_user->user_login; ?>",                     //用户名
+}
+</script>
+<script type="text/javascript" src="http://download.ntalker.com/t2d2/ntkfstat.js?" charset="utf-8"></script>
 <?php
 	/* Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which

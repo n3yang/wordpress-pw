@@ -186,7 +186,7 @@ if ( have_posts() ) :
                                     <div class="p-l-t">
                                         <p><a href="<?php the_permalink() ?>" target="_blank"><?php the_title(); ?></a><p>
                                         <P>优惠价：<span>￥<?php echo get_post_meta(get_the_ID(), 'PRODUCT_PRICE', true);?></span></P>
-                                        <p class="p-btn"><span><a href="#">在线咨询</a></span><span><a href="<?php the_permalink() ?>" target="_blank">详情</a></span></p>
+                                        <p class="p-btn"><span><a href="javascript:;" onclick="NTKF.im_openInPageChat()">在线咨询</a></span><span><a href="<?php the_permalink() ?>" target="_blank">详情</a></span></p>
                                     </div>
                                 </li>
 <?php

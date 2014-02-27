@@ -129,7 +129,7 @@ if ($_POST['submit']){
 									<span></span>
 								</li>
 								<li class="q_a">
-									<a class="q_kf" href="javascript:;"></a>
+									<a class="q_kf" href="javascript:;" onclick="NTKF.im_openInPageChat()"></a>
 								</li>
 								<li class="q_a">
 									<a class="q_map" href="javascript:;"></a>
@@ -178,7 +178,7 @@ if ($_POST['submit']){
 						<h4>您也可以通过以下方式跟我们联系</h4>
 						<p><strong>公司电话：</strong>86-010-87373685&nbsp;&nbsp;&nbsp;&nbsp;<strong>电子邮箱：</strong>51efc@51efc.com</p>
 						<p><strong>公司地址：</strong>北京市十里河居然靓屋灯饰城5-020</p>
-						<p><span><a href="#">在线咨询</a></span></p>
+						<p><span><a href="javascript:;" onclick="NTKF.im_openInPageChat()">在线咨询</a></span></p>
 					</div>
 				
 				</div>
