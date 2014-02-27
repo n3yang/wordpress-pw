@@ -321,7 +321,7 @@ function register_my_custom_menu_page(){
 	remove_meta_box('welcome_panel', 'dashboard', 'normal');   // Other WordPress News
 
 
-	add_meta_box('dashboard_welcome_custmoized', '感谢', function(){echo '感谢使用';}, 'dashboard', 'normal');
+	add_meta_box('dashboard_welcome_mail', '邮箱', function(){echo '<a href="http://mail.51efc.com/" target="_blank">点击登陆</a>';}, 'dashboard', 'normal');
 	add_filter('admin_footer_text', function(){});
 	add_filter('update_footer', function(){echo '感谢使用';});
 }
