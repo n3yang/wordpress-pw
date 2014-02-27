@@ -331,10 +331,12 @@ add_action('login_head', function(){
 });
 // show admin bar never
 show_admin_bar(false);
+// remove some nodes in admin bar
 add_action( 'admin_bar_menu', 'remove_wp_admin_bar', 999 );
 function remove_wp_admin_bar( $wp_admin_bar ) {
 	$wp_admin_bar->remove_node('wp-logo');
 	$wp_admin_bar->remove_node('comments');
+	$wp_admin_bar->remove_node('updates');
 }
 
 
