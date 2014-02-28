@@ -92,12 +92,12 @@ get_header();
                             if ($term->parent>0 && $term->parent == 400 ){
                                 $term_image_src = z_taxonomy_image_url($term->term_id);
                                 if (!empty($term_image_src)){
+                                    $term_parent = get_term($term->parent, 'genre');
+                                    $list.= '<span class="mater-pic"><b></b><img src="'.$term_image_src.'" /></span>'."\n";
                                     $i++;
                                     if ($i>=2) {
                                         break;
                                     }
-                                    $term_parent = get_term($term->parent, 'genre');
-                                    $list.= '<span class="mater-pic"><b></b><img src="'.$term_image_src.'" /></span>'."\n";
                                 }
                             }
                     	}
