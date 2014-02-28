@@ -179,9 +179,7 @@ if ( have_posts() ) :
 ?>
                                 <li>
                                     <div class="p-l-i">
-                                        <a href="<?php the_permalink() ?>">
-                                            <?php the_post_thumbnail(array(300, 225)) ?>
-                                        </a>
+                                        <a href="<?php the_permalink() ?>" target="_blank"><?php the_post_thumbnail(array(300, 225)) ?></a>
                                     </div>
                                     <div class="p-l-t">
                                         <p><a href="<?php the_permalink() ?>" target="_blank"><?php the_title(); ?></a><p>
