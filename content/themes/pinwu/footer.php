@@ -100,7 +100,7 @@ if (typeof(nav_active_nth)!='undefined') {
 NTKF_PARAM = {
   siteid:"kf_9858",                            //Ntalker提供平台基础id,
   settingid:"kf_9858_1393396291892",          //Ntalker分配的缺省客服组id  
-  uid:"<?php echo $current_user->ID; ?>",                                //用户id
+  uid:"<?php echo $current_user->ID==0 ? '' : $current_user->ID; ?>",                                //用户id
   uname:"<?php echo $current_user->user_login; ?>",                     //用户名
 }
 </script>
