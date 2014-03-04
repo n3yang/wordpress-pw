@@ -239,19 +239,21 @@ get_header();
                         	<div class="ti dib-wrap">
                             	<span class="dib"><a class="active" href="#a1">本套餐产品介绍</a></span>
                                 <span class="dib l">|</span>
-                            	<span class="dib"><a href="#a2">套餐详情</a></span>
+                            	<span class="dib"><a href="#a2">产品详情</a></span>
                                 <span class="dib l">|</span>
                             	<span class="dib"><a href="#a3">定制优势</a></span>
                                 <span class="dib l">|</span>
                             	<span class="dib"><a href="#a4">定制流程</a></span>
                                 <span class="dib l">|</span>
-                            	<span class="dib"><a href="#a5">购物保障</a></span>
+                            	<span class="dib"><a href="#a5">服务承诺</a></span>
                                 <span class="dib l">|</span>
-                            	<span class="dib"><a href="#a6">实样参考</a></span>
+                            	<span class="dib"><a href="#a6">品屋特色</a></span>
+                                <!--
                                 <span class="dib l">|</span>
                             	<span class="dib"><a href="#a7">门店活动</a></span>
                                 <span class="dib l">|</span>
-                            	<span class="dib"><a href="#a8">照片</a></span>
+                            	<span class="dib"><a href="#a8">体验照片</a></span>
+                                -->
                             </div>
                         </div>
                         <div class="products-info">
