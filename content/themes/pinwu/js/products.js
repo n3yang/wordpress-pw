@@ -23,8 +23,12 @@ function removeCookie(name){
 	setCookie(name, '1', -1);
 }
 
-
-
+//onScroll
+function onScroll(obj,t){
+	console.log($(window).scrollTop(),t)
+  $(window).scrollTop() >= t+100 ? obj.addClass('sticky') : obj.removeClass('sticky');
+}
+ 
 
 $(document).ready(function(){
 	//切换
@@ -123,4 +127,14 @@ $(document).ready(function(){
 			)
 	})();
 	
+
+
+	(function(){
+		var obj = $("#positionSticky");
+		var t = obj.offset().top;
+		$(document).on('scroll', function(){
+			onScroll(obj,t);
+		});
+	})()
+
 })

@@ -1080,3 +1080,12 @@ p.qa-a-t{
 	left:380px
 }
 
+.sticky{
+	width: 955px;
+	position:fixed;
+	top:0;
+	background: #fff;
+	z-index: 9999
+}
+
+

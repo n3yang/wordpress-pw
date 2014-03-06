@@ -236,7 +236,7 @@ get_header();
    
                     <div class="products-list-result">
                     	<div class="products-list-result-title">
-                        	<div class="ti dib-wrap">
+                        	<div class="ti dib-wrap" id="positionSticky">
                             	<span class="dib"><a class="active" href="#a1">本套餐产品介绍</a></span>
                                 <span class="dib l">|</span>
                             	<span class="dib"><a href="#a2">产品详情</a></span>
