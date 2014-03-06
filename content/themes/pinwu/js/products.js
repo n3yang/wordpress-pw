@@ -25,7 +25,6 @@ function removeCookie(name){
 
 //onScroll
 function onScroll(obj,t){
-	console.log($(window).scrollTop(),t)
   $(window).scrollTop() >= t+100 ? obj.addClass('sticky') : obj.removeClass('sticky');
 }
  
