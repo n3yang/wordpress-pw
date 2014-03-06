@@ -51,6 +51,8 @@
 }
 .products-left-box-list-qa li{
 	width:200px;
+	height: 36px;
+	overflow: hidden;
 }
 .products-left-box-list-qa li a{
 	height:36px;
@@ -696,7 +698,7 @@ span.arrow-up{
 }
 
 .news-content{
-	padding:20px;
+	padding: 0 20px 20px;
 }
 .news-content h1{
 	border-bottom:1px solid #ccc;
