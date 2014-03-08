@@ -168,7 +168,7 @@
 	
 	<!-- path -->
 	<div class="path">
-		<a href="#">
+		<a href="/measure">
 			<img src="<?php bloginfo('template_url'); ?>/images/path.gif" />
 		</a>
 	</div>
