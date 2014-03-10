@@ -144,14 +144,14 @@
 	height: 130px;
 }
 .news-wrap ul li{
-	height: 30px;
+	height: 32px;
 	overflow: hidden;
 	padding: 0 15px;
 }
 .news-wrap ul li a{
 	display: block;
-	height: 30px;
-	line-height: 30px;
+	height: 32px;
+	line-height: 32px;
 	padding:0 15px;
 	overflow: hidden;
 	background: url(../images/news-icon.gif) 0 -32px no-repeat;
