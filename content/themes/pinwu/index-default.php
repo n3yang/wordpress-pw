@@ -95,27 +95,6 @@
 					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
 					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
 				</dl>
-				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd class="n"><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-				</dl>
-				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-				</dl>
-				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-				</dl>
 			</div>
 			<div class="info-list-3">
 				<dl>
@@ -136,34 +115,13 @@
 					<dd><a href="#"><em></em>缔造多元儿童房￥12960</a></dd>
 					<dd><a href="#"><em></em>厨房清新优雅风范</a></dd>
 				</dl>
-				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-					<dd><a href="#"><em></em>缔造多元儿童房￥12960</a></dd>
-					<dd><a href="#"><em></em>厨房清新优雅风范</a></dd>
-				</dl>
-				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd class="h"><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-					<dd><a href="#"><em></em>缔造多元儿童房￥12960</a></dd>
-					<dd><a href="#"><em></em>厨房清新优雅风范</a></dd>
-				</dl>
-				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-					<dd><a href="#"><em></em>缔造多元儿童房￥12960</a></dd>
-					<dd><a href="#"><em></em>厨房清新优雅风范</a></dd>
-				</dl>
 			</div>
+				
+			<div class="info-list-4">
+				<a href="#">
+					<img src="<?php bloginfo('template_url'); ?>/images/hd.jpg" />
+				</a>
+			</div>	
 		</div>
 
 		<div class="info-r">
