@@ -82,38 +82,38 @@
 		<div class="info-l base-clear">
 			<div class="info-list-2">
 				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
+					<dt>衣帽间</dt>
+					<dd><a href="http://www.51efc.com/product/934.html"><em></em>“L”型卧式的隐藏衣帽间</a></dd>
+					<dd><a href="http://www.51efc.com/product/348.html"><em></em>圣托里尼经典白色系</a></dd>
+					<dd><a href="http://www.51efc.com/product/948.html"><em></em>衣帽间就要以我为中心</a></dd>
+					<dd><a href="http://www.51efc.com/product/954.html"><em></em>我的家像个“变色龙” </a></dd>
 				</dl>
 				<dl>
-					<dt>新品推荐</dt>
-					<dd class="h"><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
+					<dt>电视柜组合</dt>
+					<dd class="h"><a href="http://www.51efc.com/product/1607.html"><em></em>色彩简单组合更具立体感</a></dd>
+					<dd><a href="http://www.51efc.com/product/1622.html"><em></em>简约演绎另类地中海风格</a></dd>
+					<dd><a href="http://www.51efc.com/product/777.html"><em></em>让我们将组合最大化</a></dd>
+					<dd><a href="http://www.51efc.com/product/617.html"><em></em>黑巧克力搭配牛奶的滋味 </a></dd>
 				</dl>
 			</div>
 			<div class="info-list-3">
 				<dl>
-					<dt>新品推荐</dt>
-					<dd class="n"><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-					<dd><a href="#"><em></em>缔造多元儿童房￥12960</a></dd>
-					<dd><a href="#"><em></em>厨房清新优雅风范</a></dd>
+					<dt>书柜组合</dt>
+					<dd><a href="http://www.51efc.com/product/1713.html"><em></em>完美的“凸”形掩饰设计</a></dd>
+					<dd class="n"><a href="http://www.51efc.com/product/1313.html"><em></em>小巧、多功能的北欧书柜</a></dd>
+					<dd><a href="http://www.51efc.com/product/367.html"><em></em>小卧室同样拥有独立书柜</a></dd>
+					<dd><a href="http://www.51efc.com/product/1750.html"><em></em>功能化的阅读空间 </a></dd>
+					<dd><a href="http://www.51efc.com/product/1797.html"><em></em>占天不占地提升空间收纳</a></dd>
+					<dd><a href="http://www.51efc.com/product/1802.html"><em></em>书房来袭独立大空间设计</a></dd>
 				</dl>
 				<dl>
-					<dt>新品推荐</dt>
-					<dd><a href="#"><em></em>冷艳摩卡色调卧房</a></dd>
-					<dd class="n"><a href="#"><em></em>中式古韵卧房11件套</a></dd>
-					<dd><a href="#"><em></em>多功能设计让客餐厅更弹</a></dd>
-					<dd><a href="#"><em></em>黄色点缀雅致书房 </a></dd>
-					<dd><a href="#"><em></em>缔造多元儿童房￥12960</a></dd>
-					<dd><a href="#"><em></em>厨房清新优雅风范</a></dd>
+					<dt>整体衣柜</dt>
+					<dd class="n"><a href="http://www.51efc.com/product/1348.html"><em></em>小空间、大储物</a></dd>
+					<dd><a href="http://www.51efc.com/product/1631.html"><em></em>“黑”与“红”，勾画新中式</a></dd>
+					<dd><a href="http://www.51efc.com/product/1594.html"><em></em>在“绿野仙踪”找寻勇敢的心</a></dd>
+					<dd><a href="http://www.51efc.com/product/1340.html"><em></em>用简单线条唱出幽美旋律 </a></dd>
+					<dd><a href="http://www.51efc.com/product/1335.html"><em></em>黑、白、红的经典演义</a></dd>
+					<dd><a href="http://www.51efc.com/product/423.html"><em></em>做一个优雅的公主梦</a></dd>
 				</dl>
 			</div>
 				
