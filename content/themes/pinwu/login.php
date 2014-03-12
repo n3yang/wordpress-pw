@@ -59,7 +59,7 @@ if (isset($_POST['signup_submit'])) {
 			exit('<script type="text/javascript" charset="utf-8">alert("注册失败");location.href="/login"</script>');
 		}
 	} else {
-		exit('<script type="text/javascript" charset="utf-8">alert("'.$error.'");history.</script>');
+		exit('<script type="text/javascript" charset="utf-8">alert("'.$error.'");history.back(1);</script>');
 	}
 }
 ?>
