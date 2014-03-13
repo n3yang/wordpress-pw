@@ -125,9 +125,9 @@
 		</div>
 
 		<div class="info-r">
-			<div class="info-img"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ad1.jpg" /></a></div>
-			<div class="info-img"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ad2.jpg" /></a></div>
-			<div class="info-img"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/ad3.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/genre/chest/filter/110-0-0-0"><img src="<?php bloginfo('template_url'); ?>/images/ad1.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/genre/chest"><img src="<?php bloginfo('template_url'); ?>/images/ad2.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/genre/study/filter/106-0-0-0"><img src="<?php bloginfo('template_url'); ?>/images/ad3.jpg" /></a></div>
 		</div>
 	</div>
 	<!--/index-info-->
@@ -171,7 +171,7 @@
 					<?php endforeach ?>
 				</div>
 				<div class="ask-img">
-					<a href=""><img src="<?php bloginfo('template_url'); ?>/images/ask-pic.jpg" /></a>
+					<a href="http://www.51efc.com/measure"><img src="<?php bloginfo('template_url'); ?>/images/ask-pic.jpg" /></a>
 				</div>
 			</div>	
 
@@ -197,7 +197,7 @@
 		<div class="small-pic-show">
 			<div class="s-t-p">
 				<div class="s-t-p-i">
-					<a href="#">
+					<a href="http://www.51efc.com/product/genre/room">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p1.jpg" />
 						<div class="s-t-p-t">
 							<strong>2013最佳定制方案</br>为您精挑细选的设计</strong>
@@ -243,7 +243,7 @@
 		<div class="small-pic-show">
 			<div class="s-t-p">
 				<div class="s-t-p-i">
-					<a href="#">
+					<a href="http://www.51efc.com/product/genre/study">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p2.jpg" />
 						<div class="s-t-p-t">
 							<strong>2013最佳定制方案</br>为您精挑细选的设计</strong>
@@ -300,7 +300,7 @@
 		<div class="small-pic-show">
 			<div class="s-t-p">
 				<div class="s-t-p-i">
-					<a href="#">
+					<a href="http://www.51efc.com/product/genre/room">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p3.jpg" />
 						<div class="s-t-p-t">
 							<strong>2013最佳定制方案</br>为您精挑细选的设计</strong>
@@ -346,7 +346,7 @@
 		<div class="small-pic-show">
 			<div class="s-t-p">
 				<div class="s-t-p-i">
-					<a href="#">
+					<a href="http://www.51efc.com/product/genre/chest">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p4.jpg" />
 						<div class="s-t-p-t">
 							<strong>2013最佳定制方案</br>为您精挑细选的设计</strong>
