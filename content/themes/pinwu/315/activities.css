@@ -1,0 +1,73 @@
+.activities_wrap{
+	width: 100%;
+	background: #fabd17 url(bg.gif) top left repeat-x;
+}
+
+.activities_main{
+	width: 1210px;
+	margin: 0 auto;
+}
+.main_top{
+	height: 673px;
+	background: url(top_bg.jpg) no-repeat;
+}
+.main_top2{
+	height: 190px;
+	background: url(top_bg2.jpg) no-repeat;
+}
+.main3{
+	height: 187px;
+	background: url(3.jpg) no-repeat;
+}
+.main4{
+	height: 175px;
+	background: url(4.jpg) no-repeat;
+}
+.main5{
+	height: 175px;
+	background: url(5.jpg) no-repeat;
+}
+.main6{
+	position: relative;
+	height: 177px;
+	background: url(6.jpg) no-repeat;
+}
+.main6 a{
+	position: absolute;
+	width: 250px;
+	height: 80px;
+	left: 450px;
+	top:15px;
+}
+.main7{
+	height: 243px;
+	background: url(7.jpg) no-repeat;
+}
+.main8{
+	height: 321px;
+	background: url(8.jpg) no-repeat;
+}
+.main10{
+	height: 64px;
+	background: url(10.jpg) no-repeat;
+}
+.main11{
+	position: relative;
+	height: 134px;
+	background: url(11.jpg) no-repeat;
+}
+.main12{
+	height: 116px;
+	background: url(12.jpg) no-repeat;
+}
+.a_t_f{
+	height: 200px;
+	background: url(111.gif) center center no-repeat
+}
+.main11 a{
+	position: absolute;
+	width: 322px;
+	height: 60px;
+	left:444px;
+	top: 42px;  
+}
