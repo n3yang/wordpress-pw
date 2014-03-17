@@ -200,8 +200,8 @@
 					<a href="http://www.51efc.com/product/genre/room">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p1.jpg" />
 						<div class="s-t-p-t">
-							<strong>生活是变化的</br>需求是变化的</strong>
-							<p>定制就是变的艺术</br>变在品屋、变在生活、变在家</p>
+							<strong>每个人都有自己的性格</br>都有自己梦想的生活环境</strong>
+							<p>“小资”不是指你也不是指我或者他</br>而是一种生活的情调这种情调品屋带给你</p>
 							<em></em>
 						</div>
 					</a>
@@ -246,8 +246,8 @@
 					<a href="http://www.51efc.com/product/genre/study">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p2.jpg" />
 						<div class="s-t-p-t">
-							<strong>每个人都有自己的性格</br>都有自己梦想的生活环境</strong>
-							<p>“小资”不是指你也不是指我或者他</br>而是一种生活的情调这种情调品屋带给你</p>
+							<strong>它有一种让人无法抗拒的魅力</br>它能使人一瞬间就停住脚步</strong>
+							<p>它是我们创作上的里程碑</br>它是您生活中的伴侣</br>爱上它，爱上品屋</p>
 							<em></em>
 						</div>
 					</a>
@@ -349,8 +349,8 @@
 					<a href="http://www.51efc.com/product/genre/chest">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p4.jpg" />
 						<div class="s-t-p-t">
-							<strong>它有一种让人无法抗拒的魅力</br>它能使人一瞬间就停住脚步</strong>
-							<p>它是我们创作上的里程碑</br>它是您生活中的伴侣</br>爱上它，爱上品屋</p>
+							<strong>生活是变化的</br>需求是变化的</strong>
+							<p>定制就是变的艺术</br>变在品屋、变在生活、变在家</p>
 							<em></em>
 						</div>
 					</a>

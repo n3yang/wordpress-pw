@@ -135,7 +135,7 @@ get_header();
                     
                     <div class="contact">
                     	<a href="javascript:;" onclick="NTKF.im_openInPageChat()" class="contact-btn"></a>
-                        <span>联系电话：400-610-1360</span>
+                        <span style="color:red">联系电话：400-666-6490</span>
                     </div>
                     
                 </div>
