@@ -13,35 +13,50 @@
 		<div class="foot-link base-clear">
 			<ul>
 				<li>
-					<a href="#">注册新用户</a>
+					<a href="http://www.51efc.com/login">注册新用户</a>
 				</li>
 				<li>
-					<a href="#">了解产品工艺</a>
+					<a href="#">定制流程</a>
 				</li>
 				<li>
-					<a href="#">服务流程</a>
+					<a href="http://www.51efc.com/question">常见问题</a>
 				</li>
 				<li>
-					<a href="#">常见问题解答</a>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="#">免费上门量尺设计</a>
+					<a href="#">定制优势</a>
 				</li>
 				<li>
-					<a href="#">电话预约</a>
-				</li>
-				<li>
-					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">在线咨询预约</a>
-				</li>
-				<li>
-					<a href="/measure/">网络申请</a>
+					<a href="#">品屋特色</a>
 				</li>
 			</ul>
 			<ul>
 				<li>
-					<a href="#">全国配送中心</a>
+					<a href="http://www.51efc.com/product/genre/room">卧房家具定制</a>
+				</li>
+				<li>
+					<a href="http://www.51efc.com/product/genre/study">书房客厅定制</a>
+				</li>
+				<li>
+					<a href="http://www.51efc.com/product/genre/young">青少年房定制</a>
+				</li>
+				<li>
+					<a href="http://www.51efc.com/product/genre/chest">实木家具定制</a>
+				</li>
+				<li>
+					<a href="http://www.51efc.com/diy">家具DIY</a>
+				</li>
+				<li>
+					<a href="http://www.51efc.com/#">智能家居</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">正品保证</a>
+				</li>
+				<li>
+					<a href="#">隐私保护</a>
+				</li>
+				<li>
+					<a href="#">免责声明</a>
 				</li>
 				<li>
 					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">售后服务</a>
@@ -49,17 +64,41 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="#">量尺送200元</a>
+					<a href="#">八项免费服务</a>
 				</li>
 				<li>
-					<a href="#">优惠的购买价格</a>
+					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">订单查询</a>
+				</li>
+				<li>
+					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">活动咨询</a>
+				</li>
+				<li>
+					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">智能体验</a>
 				</li>
 			</ul>
 			<ul class="show-map">
 				<li>
 					<span class="base-clear">
-						<em>朝阳分店：</em>
-						<p>北京市十里河居然靓屋灯饰城5-020<br>TEL 010-87373685<img src="<?php bloginfo('template_url'); ?>/images/look-map.gif" /><p>
+						<em>地址：</em>
+						<p>北京市朝阳区十里河居然靓屋灯饰城5-020<img src="<?php bloginfo('template_url'); ?>/images/look-map.gif" style="vertical-align: middle;" /><p>
+					</span>
+				</li>
+				<li>
+					<span class="base-clear">
+						<em>联系电话：</em>
+						<p>010-87373685<p>
+					</span>
+				</li>
+				<li>
+					<span class="base-clear">
+						<em>服务热线：</em>
+						<p>400-666-6490<p>
+					</span>
+				</li>
+				<li>
+					<span class="base-clear">
+						<em>企业邮箱：</em>
+						<p>51efc@51efc.com<p>
 					</span>
 				</li>
 			</ul>
@@ -69,9 +108,9 @@
 
 		<div class="footer-hd">
 			<span class="dib-wrap">
-				<a class="dib" href="#">关于我们</a>
+				<a class="dib" href="#">了解品屋</a>
 				<em class="dib">|</em>
-				<a class="dib" href="#">联系我们</a>
+				<a class="dib" href="#">加入品屋</a>
 				<em class="dib">|</em>
 				<a class="dib" href="#">友情链接</a>
 			</span>
