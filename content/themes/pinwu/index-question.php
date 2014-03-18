@@ -132,13 +132,13 @@ if ($_POST['submit']){
 									<a class="q_kf" href="javascript:;" onclick="NTKF.im_openInPageChat()"></a>
 								</li>
 								<li class="q_a">
-									<a class="q_map" href="javascript:;"></a>
+									<a class="q_map" href="http://j.map.baidu.com/u9EXq" target="_blank"></a>
 								</li>
 								<li class="q_a">
 									<a class="q_tel" href="javascript:;"></a>
 								</li>
 								<li class="q_a">
-									<a class="q_em" href="javascript:;"></a>
+									<a class="q_em" href="mailto:51efc@51efc.com"></a>
 								</li>
 							</ul>
 						</div>
