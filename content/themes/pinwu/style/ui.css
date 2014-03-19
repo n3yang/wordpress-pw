@@ -222,6 +222,17 @@ Version: 1.1
 	width: 340px;
 	height: 200px;
 }
+#map-box .map-wrap a{	
+	display: inline;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	padding-left: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 14px;
+	border-radius: 0;
+	background: none;
+}
 #map-i{
 	position: absolute;
 	width: 9px;
