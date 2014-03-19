@@ -82,8 +82,8 @@ get_header();
 
         	<div class="experienceroom-title">
             	<p>
-                	在右侧申请免费量房吧
-                	<span class="t-h">免费量房设计流程</span>
+                	在右侧申请免费量尺吧
+                	<span class="t-h">免费量尺设计流程</span>
                 </p>
             </div>
             <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -95,7 +95,7 @@ get_header();
                     <td width="161" align="left" valign="bottom"><img src="<?php bloginfo('template_url'); ?>/images/design_lf03.gif" data-original="<?php bloginfo('template_url'); ?>/images/design_lf03.gif" width="161" height="116"></td>
                     </tr>
                   <tr>
-                    <td width="174" valign="top" class="t12_02">1、上门量房：沟通业主需求，确定家具尺寸及摆放位置，记录业主户型的装修风格及个性特点。</td>
+                    <td width="174" valign="top" class="t12_02">1、上门量尺：沟通业主需求，确定家具尺寸及摆放位置，记录业主户型的装修风格及个性特点。</td>
                     <td rowspan="3">&nbsp;</td>
                     <td width="161" valign="top" class="t12_02">2、方案分析：由室内设计师、软装设计师、结构设计师、工艺设计师组团对业主需求及户型特点进行个性分析，提出解决方案。</td>
                     <td rowspan="3">&nbsp;</td>
@@ -140,7 +140,7 @@ get_header();
         <div class="fmright-box">
         	<div class="reg-form-wrap">
             	<h1><img src="<?php bloginfo('template_url'); ?>/images/free-top-title.gif" /></h1>
-                <p style="text-align:center">（即日起，预约免费上门量房成功，即送200元代金券）</p>
+                <p style="text-align:center">（即日起，预约免费上门量尺成功，即送200元代金券）</p>
                 <?php if (!empty($error)): ?>
 				<div class="error-box">
                 	<p><?php echo $error ;?></p>
