@@ -157,7 +157,7 @@
 			<a href="javascript:;" title="展示店地址">展示店地址</a>
 			<div id="map-box">
 				<div class="map-wrap">
-					<a href="http://j.map.baidu.com/u9EXq" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/map.gif" /></a>
+					<a href="http://j.map.baidu.com/cAZTA" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/map.gif" /></a>
 				</div>
 			</div>
 			<div id="map-i"></div>

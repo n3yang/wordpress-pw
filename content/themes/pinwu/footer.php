@@ -80,7 +80,7 @@
 				<li>
 					<span class="base-clear">
 						<em>地址：</em>
-						<p>北京市朝阳区十里河居然靓屋灯饰城5-020<a href="http://j.map.baidu.com/u9EXq" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/look-map.gif" style="vertical-align: middle;" /></a><p>
+						<p>北京市朝阳区十里河居然靓屋灯饰城5-020<a href="http://j.map.baidu.com/cAZTA" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/look-map.gif" style="vertical-align: middle;" /></a><p>
 					</span>
 				</li>
 				<li>
