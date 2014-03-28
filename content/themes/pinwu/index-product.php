@@ -112,7 +112,7 @@ $nav_nth = $setting['nav_nth'];
 					$filter_names = array('style'=>'风格', 'feature'=>'产品', 'price'=>'价格', 'board'=>'板材');
 					foreach ($product_menu as $key => $value) {
 						echo '<dl class="base-clear">';
-                        if ($key=='53'){
+                        if ($key=='board' && $genre_obj->term_id==53){
                         	echo '<dt>款式：</dt>';
                         } else {
 							echo '<dt>'.$filter_names[$key].'：</dt>';
