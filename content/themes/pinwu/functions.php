@@ -435,7 +435,7 @@ function pinwu_get_product_setting($term_id=NULL) {
 			'ground'	=> array(601, 602, 603, 604, 605, 606, 607, 608, 609), // 地面
 			'slug'		=> 'door',
 			'name'		=> '移门世界',
-			'nav_nth'	=> 4,
+			'nav_nth'	=> 6,
 		),
 		'54'	=> array( // 实木定制
 			'style'		=> array(122, 123, 112, 124, 125), // 风格
@@ -457,7 +457,7 @@ function pinwu_get_product_setting($term_id=NULL) {
 			'ground'	=> array(601, 602, 603, 604, 605, 606, 607, 608, 609), // 地面
 			'slug'		=> 'young',
 			'name'		=> '青少年房',
-			'nav_nth'	=> 7,
+			'nav_nth'	=> 4,
 		),
 	);
 	

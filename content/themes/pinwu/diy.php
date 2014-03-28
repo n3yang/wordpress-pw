@@ -90,7 +90,7 @@ get_header();
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/homeDiy.js"></script>
     <script>
 		var default_fun_id = <?php echo $filters['feature_id'] ?>;
-		var nav_active_nth = 6;
+		var nav_active_nth = 8;
 	</script>
     
     

@@ -125,19 +125,19 @@
 					<a href="/product/genre/study" title="书房客厅定制">书房客厅定制</a>
 				</li>
 				<li>
-					<a href="/product/genre/door" title="移门世界">移门世界</a>
+					<a href="/product/genre/young" title="青少年房定制">青少年房定制</a>
 				</li>
 				<li>
 					<a href="/product/genre/chest" title="实木定制">实木定制</a>
 				</li>
 				<li>
-					<a href="/diy" title="空间DIY">空间DIY</a>
-				</li>
-				<li>
-					<a href="/product/genre/young" title="青少年房定制">青少年房定制</a>
+					<a href="/product/genre/door" title="移门世界">移门世界</a>
 				</li>
 				<li>
 					<a href="#" title="智能家居">智能家居</a>
+				</li>
+				<li>
+					<a href="/diy" title="空间DIY">空间DIY</a>
 				</li>
 				<li>
 					<a href="/article/category/video" title="视频展示">视频展示</a>
