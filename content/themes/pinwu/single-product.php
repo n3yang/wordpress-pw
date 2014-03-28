@@ -105,21 +105,29 @@ get_header();
                             echo '<p>当前'.$term_parent->name.'：'.$list.'</p>'."\n";
                         }
                     	?>
-                        <p>可选板材：<span class="select-pic-wrap showSelectBox" title="点击展开">
-                                        <span class="select-pic-box">
+
+
+
                         <?php
-                            $terms = get_terms('genre', array('include'=>range(400,410), 'hide_empty'=>1, 'orderby'=>'slug'));
-                            foreach ($terms as $term):
-                                $thumb_url = z_taxonomy_image_url($term->term_id);
-                                if ($thumb_url):
+                            $options = get_post_meta(get_the_ID(), 'PRODUCT_BOARD_IDS', true);
+                            $options = strlen($options)>0 ? explode('|', $options) : array();
+                            if (count($options)>0):
+                                $terms = get_terms('genre', array('include'=>$options, 'hide_empty'=>1));
+                                echo '
+                        <p>可选板材：<span class="select-pic-wrap showSelectBox" title="点击展开">
+                                        <span class="select-pic-box">';
+                                foreach ($terms as $term):
+                                    $thumb_url = z_taxonomy_image_url($term->term_id);
+                                    if ($thumb_url):
 
                         ?>
                                             <span class="select-pic">
                                                 <img src="<?php echo $thumb_url ?>" >
                                             </span>
                         <?php
-                                endif;
-                            endforeach;
+                                    endif;
+                                endforeach;
+                            endif;
                         ?>
                                         </span>
                                     </span>

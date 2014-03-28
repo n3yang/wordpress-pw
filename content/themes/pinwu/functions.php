@@ -473,11 +473,20 @@ function pinwu_get_product_menu_setting($genre_term_id) {
 	if ($menu[$genre_term_id]) {
 		foreach ($menu[$genre_term_id] as $k=>$v) {
 			if (in_array($k, array('style', 'feature', 'price', 'board'))) {
-				$array[$k] = get_terms('genre', array('include'=>$v, 'hide_empty'=>0, 'orderby'=>'id'));
+				$array = get_terms('genre', array('include'=>$v, 'hide_empty'=>0, 'orderby'=>'id'));
+				// order by menu setting
+				foreach ($v as $order_term_id){
+					foreach ($array as $term){
+						if ($term->term_id==$order_term_id) {
+							$return[$k][] = $term;
+						}
+					}
+				}
 			}
 		}
 	}
-	return $array;
+	// print_r(	$array);
+	return $return;
 }
 
 
