@@ -119,19 +119,19 @@
 					<a href="/" title="首页">首页</a>
 				</li>
 				<li>
-					<a href="/product/genre/room" title="卧房家具定制">卧房家具定制</a>
+					<a href="/product/genre/room" title="卧房定制">卧房定制</a>
 				</li>
 				<li>
-					<a href="/product/genre/study" title="书房家具定制">书房家具定制</a>
+					<a href="/product/genre/study" title="书房客厅定制">书房客厅定制</a>
 				</li>
 				<li>
-					<a href="/product/genre/door" title="门的世界">门的世界</a>
+					<a href="/product/genre/door" title="移门世界">移门世界</a>
 				</li>
 				<li>
-					<a href="/product/genre/chest" title="整体衣柜">整体衣柜</a>
+					<a href="/product/genre/chest" title="实木定制">实木定制</a>
 				</li>
 				<li>
-					<a href="/diy" title="家具DIY">家具DIY</a>
+					<a href="/diy" title="空间DIY">空间DIY</a>
 				</li>
 				<li>
 					<a href="/product/genre/young" title="青少年房定制">青少年房定制</a>
@@ -146,7 +146,7 @@
 					<a href="#" title="定制导购">定制导购</a>
 				</li>
 				<li>
-					<a href="/question" title="问答">问答</a>
+					<a href="/question" title="品屋知道">品屋知道</a>
 				</li>
 			</ul>
 		</div>

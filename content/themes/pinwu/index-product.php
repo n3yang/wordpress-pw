@@ -109,10 +109,14 @@ $nav_nth = $setting['nav_nth'];
 
                     <div class="products-list-screen">
 					<?php 
-					$filter_names = array('style'=>'风格', 'feature'=>'功能', 'price'=>'价格', 'board'=>'板材');
+					$filter_names = array('style'=>'风格', 'feature'=>'产品', 'price'=>'价格', 'board'=>'板材');
 					foreach ($product_menu as $key => $value) {
 						echo '<dl class="base-clear">';
-						echo '<dt>'.$filter_names[$key].'：</dt>';
+                        if ($key=='53'){
+                        	echo '<dt>板材：</dt>';
+                        } else {
+							echo '<dt>'.$filter_names[$key].'：</dt>';
+						}
 						echo '<dd class="dib-wrap">';
 						$link_all = implode('-', array_merge($filters, array($key=>0)));
 						$css_active = $filters[$key]==0 ? ' active' : '';
