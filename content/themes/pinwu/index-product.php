@@ -113,7 +113,7 @@ $nav_nth = $setting['nav_nth'];
 					foreach ($product_menu as $key => $value) {
 						echo '<dl class="base-clear">';
                         if ($key=='53'){
-                        	echo '<dt>板材：</dt>';
+                        	echo '<dt>款式：</dt>';
                         } else {
 							echo '<dt>'.$filter_names[$key].'：</dt>';
 						}
