@@ -42,10 +42,7 @@
 					<a href="http://www.51efc.com/product/genre/chest">实木家具定制</a>
 				</li>
 				<li>
-					<a href="http://www.51efc.com/diy">家具DIY</a>
-				</li>
-				<li>
-					<a href="http://www.51efc.com/#">智能家居</a>
+					<a href="http://www.51efc.com/diy">空间DIY</a>
 				</li>
 			</ul>
 			<ul>

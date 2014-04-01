@@ -307,6 +307,7 @@ div.backBox{
     right: 10px;
     bottom: 100px;
     _bottom: "auto";
+    z-index: 99999;
 }
 div.backBox a {
     display: block;
