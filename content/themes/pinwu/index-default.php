@@ -247,7 +247,7 @@
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p2.jpg" />
 						<div class="s-t-p-t">
 							<strong>它有一种让人无法抗拒的魅力</br>它能使人一瞬间就停住脚步</strong>
-							<p>它是我们创作上的里程碑</br>它是您生活中的伴侣</br>爱上它，爱上品屋</p>
+							<p>它是我们创作上的里程碑</br>它是您生活中的伴侣 爱上它，爱上品屋</p>
 							<em></em>
 						</div>
 					</a>

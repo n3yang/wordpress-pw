@@ -299,25 +299,65 @@ Version: 1.1
 
 
 /*go-to-top*/
-a.backToTop {
-    display: none;
+div.backBox{
     width: 48px;
-    height: 48px;
+    height: 244px;
     position: fixed;
-    background: url(../images/gototop.gif) no-repeat;
     _position: absolute;
     right: 10px;
     bottom: 100px;
     _bottom: "auto";
+}
+div.backBox a {
+    display: block;
+    width: 48px;
+    height: 48px;
     cursor: pointer;
+    margin-bottom: 1px; 
+}
+div.backBox a.backToTop {
     opacity: .6;
     filter: Alpha(opacity=60);
+    background: url(../images/gototop.gif) no-repeat;
 }
-a.backToTop:hover{
+div.backBox a.backToTop:hover{
     opacity: 1;
     filter: Alpha(opacity=100);
 }
-
+div.backBox a.backWeixin{
+	position: relative;
+    background: url(../images/backWeixin.gif) no-repeat;
+}
+div.backBox a.backWeixin:hover{
+    background: url(../images/backWeixin-hover.gif) no-repeat;
+}
+div.backBox a.backWeixin em{
+	display: none;
+	position: absolute;
+	left: -160px;
+	top: 0;
+	width: 160px;
+	height: 200px;
+	background: url(../images/gt_wx.gif) no-repeat;
+}
+div.backBox a.backKefu{
+    background: url(../images/backKefu.gif) no-repeat;
+}
+div.backBox a.backKefu:hover{
+    background: url(../images/backKefu-hover.gif) no-repeat;
+}
+div.backBox a.backLiangchi{
+    background: url(../images/backLiangchi.gif) no-repeat;
+}
+div.backBox a.backLiangchi:hover{
+    background: url(../images/backLiangchi-hover.gif) no-repeat;
+}
+div.backBox a.backHoudong{
+    background: url(../images/backHoudong.gif) no-repeat;
+}
+div.backBox a.backHoudong:hover{
+    background: url(../images/backHoudong-hover.gif) no-repeat;
+}
 
 
 /*Crumbs*/

@@ -48,16 +48,27 @@ $(document).ready(function(){
 
 	//go-to-top
 	(function() {
-	    var $backToTopTxt = "返回顶部", $backToTopEle = $('<a class="backToTop"></a>').appendTo($("body"))
-	        .attr("title", $backToTopTxt).click(function() {
-	        $("html, body").animate({ scrollTop: 0 }, 120);
-	    }), $backToTopFun = function() {
-	        var st = $(document).scrollTop(), winh = $(window).height();
-	        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();    
-	        if (!window.XMLHttpRequest) {
-	            $backToTopEle.css("top", st + winh - 166);    
-	        }
-	    };
+	   	var $backBox = $('<div class="backBox"><a class="backWeixin" title="微信"><em></em></a><a class="backKefu" title="在线客服" href="javascript:;" onclick="NTKF.im_openInPageChat()" ></a><a class="backLiangchi" href="http://www.51efc.com/measure" title="免费量尺设计"></a><a class="backHoudong" href="http://www.51efc.com/activities-315" title="最新活动"></a></div>'),
+	    	$backToTopEle = $('<a class="backToTop" title="返回顶部"></a>').appendTo($backBox);
+	    	$backBox.appendTo($("body"));
+
+	        $(".backToTop").click(function() {
+	        	$("html, body").animate({ scrollTop: 0 }, 120);
+	    	})
+
+	        $(".backWeixin").hover(function(){
+	        	$(this).find("em").show();
+	        },function(){
+	        	$(this).find("em").hide();
+	        })
+
+	    	function $backToTopFun() {
+		        var st = $(document).scrollTop(), winh = $(window).height();
+		        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();    
+		        if (!window.XMLHttpRequest) {
+		            $backToTopEle.css("top", st + winh - 166);    
+		        }
+		    };
 	    $(window).bind("scroll", $backToTopFun);
 	    $(function() { $backToTopFun(); });
 	})();
