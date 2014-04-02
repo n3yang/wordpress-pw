@@ -44,6 +44,9 @@
 				<li>
 					<a href="http://www.51efc.com/diy">空间DIY</a>
 				</li>
+				<li>
+					<a href="http://www.51efc.com/#">智能家居</a>
+				</li>
 			</ul>
 			<ul>
 				<li>
@@ -68,9 +71,6 @@
 				</li>
 				<li>
 					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">活动咨询</a>
-				</li>
-				<li>
-					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">智能体验</a>
 				</li>
 			</ul>
 			<ul class="show-map">
