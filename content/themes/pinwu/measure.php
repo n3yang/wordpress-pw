@@ -86,58 +86,14 @@ get_header();
                 	<span class="t-h">免费量尺设计流程</span>
                 </p>
             </div>
-            <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
-                  <tbody><tr>
-                    <td width="161" align="left" valign="bottom"><img src="<?php bloginfo('template_url'); ?>/images/design_lf01.gif" data-original="<?php bloginfo('template_url'); ?>/images/design_lf01.gif" width="161" height="116"></td>
-                    <td width="306">&nbsp;</td>
-                    <td width="161" align="left" valign="bottom"><img src="<?php bloginfo('template_url'); ?>/images/design_lf02.gif" data-original="<?php bloginfo('template_url'); ?>/images/design_lf02.gif" width="161" height="116"></td>
-                    <td width="360">&nbsp;</td>
-                    <td width="161" align="left" valign="bottom"><img src="<?php bloginfo('template_url'); ?>/images/design_lf03.gif" data-original="<?php bloginfo('template_url'); ?>/images/design_lf03.gif" width="161" height="116"></td>
-                    </tr>
-                  <tr>
-                    <td width="174" valign="top" class="t12_02">1、上门量尺：沟通业主需求，确定家具尺寸及摆放位置，记录业主户型的装修风格及个性特点。</td>
-                    <td rowspan="3">&nbsp;</td>
-                    <td width="161" valign="top" class="t12_02">2、方案分析：由室内设计师、软装设计师、结构设计师、工艺设计师组团对业主需求及户型特点进行个性分析，提出解决方案。</td>
-                    <td rowspan="3">&nbsp;</td>
-                    <td width="161" valign="top" class="t12_02">3、方案制作：根据方案分析，制作输出平面布置方案、各空间多角度实景效果图、各空间的全屋家具报价表。</td>
-                    </tr>
-                  <tr>
-                    <td valign="top" class="t12_02"><img src="<?php bloginfo('template_url'); ?>/images/design_lf04.gif" data-original="<?php bloginfo('template_url'); ?>/images/design_lf04.gif" width="161" height="116"></td>
-                    <td width="161" valign="top" class="t12_02"><img src="<?php bloginfo('template_url'); ?>/images/design_lf05.gif" data-original="<?php bloginfo('template_url'); ?>/images/design_lf05.gif" width="161" height="116"></td>
-                    <td width="161" valign="top" class="t12_02"><img src="<?php bloginfo('template_url'); ?>/images/design_lf06.gif" width="161" height="116"></td>
-                  </tr>
-                  <tr>
-                    <td valign="top" class="t12_02">4、确定方案：到门店看样，与设计师沟通确定方案。</td>
-                    <td width="161" valign="top" class="t12_02">5、订单处理：您的订单通过网络进入自动化生产排产处理中心。</td>
-                    <td width="161" valign="top" class="t12_02">6、网络查询：您可以随时随地通过互联网查询您的订单情况。</td>
-                  </tr>
-                  <tr>
-                    <td align="left" valign="bottom"><img src="<?php bloginfo('template_url'); ?>/images/design_lf07.gif" width="161" height="116"></td>
-                    <td>&nbsp;</td>
-                    <td align="left" valign="bottom"><img src="<?php bloginfo('template_url'); ?>/images/design_lf08.gif" width="161" height="116"></td>
-                    <td>&nbsp;</td>
-                    <td align="left" valign="bottom"><img src="<?php bloginfo('template_url'); ?>/images/design_lf09.gif" width="161" height="116"></td>
-                    </tr>
-                  <tr>
-                    <td width="174" valign="top" class="t12_02">7、订单生产：您的订单进入自动化定制生产线，完成加工和包装。</td>
-                    <td rowspan="3">&nbsp;</td>
-                    <td width="161" rowspan="3" valign="top" class="t12_02">8、预约送货：物流部门工作人员和您预约时间送货上门。</td>
-                    <td rowspan="3">&nbsp;</td>
-                    <td width="161" rowspan="3" valign="top" class="t12_02">9、上门安装：我们的工人师傅完成安装。</td>
-                    </tr>
-                  <tr>
-                    <td valign="top" class="t12_02"><img src="<?php bloginfo('template_url'); ?>/images/design_lf010.gif" width="174" height="124"></td>
-                  </tr>
-                  <tr>
-                    <td valign="top" class="t12_02">10、售后服务：客服中心的工作人员启动售后服务。</td>
-                  </tr>
-                </tbody>
-            </table>
+            
+            <div style="width:580px; height:824px; margin: 0 auto;">
+                <img src="http://51efc.com/content/themes/pinwu/images/lc.gif" width="580" height="824" />
+            </div>
                         
-</div>
-        <!--/login-->
+        </div>
         <!--register-->
-        <div class="fmright-box">
+        <div class="fmright-box" style="height:914px">
         	<div class="reg-form-wrap">
             	<h1><img src="<?php bloginfo('template_url'); ?>/images/free-top-title.gif" /></h1>
                 <p style="text-align:center">（即日起，预约免费上门量尺成功，即送200元代金券）</p>
