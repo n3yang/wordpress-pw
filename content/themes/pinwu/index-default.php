@@ -125,8 +125,8 @@
 		</div>
 
 		<div class="info-r">
-			<div class="info-img"><a href="http://www.51efc.com/product/genre/chest/filter/110-0-0-0"><img src="<?php bloginfo('template_url'); ?>/images/ad1.jpg" /></a></div>
-			<div class="info-img"><a href="http://www.51efc.com/product/genre/chest"><img src="<?php bloginfo('template_url'); ?>/images/ad2.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/genre/wood/filter/110-0-0-0"><img src="<?php bloginfo('template_url'); ?>/images/ad1.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/genre/wood"><img src="<?php bloginfo('template_url'); ?>/images/ad2.jpg" /></a></div>
 			<div class="info-img"><a href="http://www.51efc.com/product/genre/study/filter/106-0-0-0"><img src="<?php bloginfo('template_url'); ?>/images/ad3.jpg" /></a></div>
 		</div>
 	</div>
@@ -346,7 +346,7 @@
 		<div class="small-pic-show">
 			<div class="s-t-p">
 				<div class="s-t-p-i">
-					<a href="http://www.51efc.com/product/genre/chest">
+					<a href="http://www.51efc.com/product/genre/wood">
 						<img src="<?php bloginfo('template_url'); ?>/images/s-t-p4.jpg" />
 						<div class="s-t-p-t">
 							<strong>生活是变化的</br>需求是变化的</strong>

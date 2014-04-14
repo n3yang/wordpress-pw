@@ -39,7 +39,7 @@
 					<a href="http://www.51efc.com/product/genre/young">青少年房定制</a>
 				</li>
 				<li>
-					<a href="http://www.51efc.com/product/genre/chest">实木家具定制</a>
+					<a href="http://www.51efc.com/product/genre/wood">实木家具定制</a>
 				</li>
 				<li>
 					<a href="http://www.51efc.com/diy">空间DIY</a>

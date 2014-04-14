@@ -11,6 +11,9 @@
 remove_action( 'wp_version_check', 'wp_version_check' );
 add_filter( 'pre_site_transient_update_core', function(){return;});
 remove_action('wp_head', 'wp_generator');
+// turn off links in header
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
 
 // 
 add_filter('the_permalink', function($a){
@@ -444,7 +447,7 @@ function pinwu_get_product_setting($term_id=NULL) {
 			'board'		=> array(418, 419, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431), // 板材
 			'wall'		=> array(501, 502, 503, 504, 505, 506, 507, 508, 509), // 墙面
 			'ground'	=> array(601, 602, 603, 604, 605, 606, 607, 608, 609), // 地面
-			'slug'		=> 'chest',
+			'slug'		=> 'wood',
 			'name'		=> '实木定制',
 			'nav_nth'	=> 5,
 		),

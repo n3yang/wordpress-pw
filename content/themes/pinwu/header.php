@@ -128,7 +128,7 @@
 					<a href="/product/genre/young" title="青少年房定制">青少年房定制</a>
 				</li>
 				<li>
-					<a href="/product/genre/chest" title="实木定制">实木定制</a>
+					<a href="/product/genre/wood" title="实木定制">实木定制</a>
 				</li>
 				<li>
 					<a href="/product/genre/door" title="移门世界">移门世界</a>
