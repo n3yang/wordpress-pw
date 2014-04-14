@@ -106,7 +106,7 @@ $(document).ready(function(){
 				success: function(d){
 					// console.log(d);
 					if (d.thumb_src) {
-						$('#effect_bigPic_link, #result_link_l').attr('href', d.link);
+						/* $('#effect_bigPic_link, #result_link_l').attr('href', d.link); */
 						$('#effect_bigPic_link img').attr('src', d.thumb_src);
 					};
 				},
