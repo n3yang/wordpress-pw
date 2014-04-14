@@ -112,7 +112,7 @@ get_header();
                             $options = get_post_meta(get_the_ID(), 'PRODUCT_BOARD_IDS', true);
                             $options = strlen($options)>0 ? explode(',', $options) : array();
                             if (count($options)>0):
-                                $terms = get_terms('genre', array('include'=>$options));
+                                $terms = get_terms('genre', array('include'=>$options, 'hide_empty'=>0));
                                 echo '
                         <p>可选板材：<span class="select-pic-wrap showSelectBox" title="点击展开">
                                         <span class="select-pic-box">';
