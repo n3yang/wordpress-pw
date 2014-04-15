@@ -90,7 +90,7 @@ $(document).ready(function(){
 					wall = $(this).attr('data-id');
 				}
 			});
-
+			$('#effect_bigPic_link img').attr('src', "http://www.51efc.com/content/themes/pinwu/images/t.png");
 			$.ajax({
 				type: "POST",
 				url: "/diy/?method=ajax",
