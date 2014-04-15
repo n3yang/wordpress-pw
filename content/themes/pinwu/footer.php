@@ -58,9 +58,6 @@
 				<li>
 					<a href="#">免责声明</a>
 				</li>
-				<li>
-					<a href="javascript:;" onclick="NTKF.im_openInPageChat()">售后服务</a>
-				</li>
 			</ul>
 			<ul>
 				<li>
