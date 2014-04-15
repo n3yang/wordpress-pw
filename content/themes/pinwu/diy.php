@@ -10,7 +10,7 @@
 // the default feature
 if (empty($_REQUEST['feature'])) {
 	$terms = get_terms('genre', array('parent'=>80, 'hide_empty'=>1, 'orderby'=>'slug'));
-	$filters['feature_id'] = $term->term_id;
+	$filters['feature_id'] = $term[0]->term_id;
 } else {
 	$filters['feature_id'] = intval($_REQUEST['feature']);
 }
