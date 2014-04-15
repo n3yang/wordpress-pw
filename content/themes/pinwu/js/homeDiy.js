@@ -80,6 +80,7 @@ $(document).ready(function(){
 				p = $(this).parent();
 			p.find("div").removeClass("active");
 			$(this).addClass("active");
+			var b = $('#effect_bigPic_link img');
 
 			$("#effect_choose dd .active").each(function(i){
 				if (i==0) {
@@ -90,7 +91,7 @@ $(document).ready(function(){
 					wall = $(this).attr('data-id');
 				}
 			});
-			$('#effect_bigPic_link img').attr('src', "http://www.51efc.com/content/themes/pinwu/images/t.png");
+
 			$.ajax({
 				type: "POST",
 				url: "/diy/?method=ajax",
@@ -107,13 +108,25 @@ $(document).ready(function(){
 					// console.log(d);
 					if (d.thumb_src) {
 						/* $('#effect_bigPic_link, #result_link_l').attr('href', d.link); */
-						$('#effect_bigPic_link img').attr('src', d.thumb_src);
+						b.attr('src', "http://www.51efc.com/content/themes/pinwu/images/t.png");
+						loadImage(d.thumb_src);
 					};
 				},
 				error: function() {
 					
 				}
 			});
+
+			//loadImage
+			function loadImage(url) {     
+			    var img = new Image(); 
+			    img.onload = function(){
+			        img.onload = null;
+			        b.attr("src", img.src).css("height", 600);
+			    }
+			    img.src = url;
+			    b.css("height", 0);
+			}
 			
 		}
 		
