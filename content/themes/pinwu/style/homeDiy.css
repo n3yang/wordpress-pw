@@ -142,7 +142,7 @@
 	width:868px;
 	height:600px;
 	line-height:0;
-	background:url(../images/loading.gif) center center no-repeat;
+	background:#f9f9f9 url(../images/loading.gif) center center no-repeat;
 	margin-bottom:20px;
 }
 .effect-bigPic-result img{
