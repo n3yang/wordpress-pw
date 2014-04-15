@@ -8,7 +8,12 @@
  */
 
 // the default feature
-$filters['feature_id'] = !empty($_REQUEST['feature']) ? intval($_REQUEST['feature']) : 81;
+if (empty($_REQUEST['feature'])) {
+	$terms = get_terms('genre', array('parent'=>80, 'hide_empty'=>1, 'orderby'=>'slug'));
+	$filters['feature_id'] = $term->term_id;
+} else {
+	$filters['feature_id'] = intval($_REQUEST['feature']);
+}
 $filters['board_id'] = !empty($_REQUEST['board']) ? intval($_REQUEST['board']) : 0;
 $filters['ground_id'] = !empty($_REQUEST['ground']) ? intval($_REQUEST['ground']) : 0;
 $filters['wall_id'] = !empty($_REQUEST['wall']) ? intval($_REQUEST['wall']) : 0;
