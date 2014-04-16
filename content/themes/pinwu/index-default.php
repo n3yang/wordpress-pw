@@ -125,9 +125,9 @@
 		</div>
 
 		<div class="info-r">
-			<div class="info-img"><a href="http://www.51efc.com/product/genre/wood/filter/110-0-0-0"><img src="<?php bloginfo('template_url'); ?>/images/ad1.jpg" /></a></div>
-			<div class="info-img"><a href="http://www.51efc.com/product/genre/wood"><img src="<?php bloginfo('template_url'); ?>/images/ad2.jpg" /></a></div>
-			<div class="info-img"><a href="http://www.51efc.com/product/genre/study/filter/106-0-0-0"><img src="<?php bloginfo('template_url'); ?>/images/ad3.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/2695.html"><img src="<?php bloginfo('template_url'); ?>/images/ad1.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/genre/study"><img src="<?php bloginfo('template_url'); ?>/images/ad2.jpg" /></a></div>
+			<div class="info-img"><a href="http://www.51efc.com/product/2005.html"><img src="<?php bloginfo('template_url'); ?>/images/ad3.jpg" /></a></div>
 		</div>
 	</div>
 	<!--/index-info-->
