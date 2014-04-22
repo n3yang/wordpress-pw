@@ -50,13 +50,13 @@
 			</ul>
 			<ul>
 				<li>
-					<a href="#">正品保证</a>
+					<a href="http://www.51efc.com/genuine" target="_blank">正品保证</a>
 				</li>
 				<li>
-					<a href="#">隐私保护</a>
+					<a href="http://www.51efc.com/privacy" target="_blank">隐私保护</a>
 				</li>
 				<li>
-					<a href="#">免责声明</a>
+					<a href="http://www.51efc.com/statement" target="_blank">免责声明</a>
 				</li>
 			</ul>
 			<ul>
