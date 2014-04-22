@@ -104,7 +104,7 @@
 			<span class="dib-wrap">
 				<a class="dib" href="#">了解品屋</a>
 				<em class="dib">|</em>
-				<a class="dib" href="#">加入品屋</a>
+				<a class="dib" href="http://www.51efc.com/joined">加入品屋</a>
 				<em class="dib">|</em>
 				<a class="dib" href="#">友情链接</a>
 			</span>
