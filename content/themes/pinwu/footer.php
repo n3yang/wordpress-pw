@@ -102,7 +102,7 @@
 
 		<div class="footer-hd">
 			<span class="dib-wrap">
-				<a class="dib" href="#">了解品屋</a>
+				<a class="dib" href="http://www.51efc.com/joined">了解品屋</a>
 				<em class="dib">|</em>
 				<a class="dib" href="http://www.51efc.com/joined">加入品屋</a>
 				<em class="dib">|</em>
