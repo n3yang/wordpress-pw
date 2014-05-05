@@ -47,7 +47,7 @@
 			<?php } ?>
 			<li class="weibo menu">
 				<div class="menu-hd">
-					<a href="#">
+					<a href="http://weibo.com/pinwudingzhi">
 						<span class="weibo-icon"></span>
 						<span>官方微博</span>
 					</a>
